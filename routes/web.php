@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('/qrcode',function() {
+	return view('reader');
+})->name('reader');
+
 Route::get('/', function () {
     return view('welcome');
 });
