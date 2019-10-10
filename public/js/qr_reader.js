@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(e=>{
+
 
 		var video = document.createElement("video");    
 
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		// 카메라 사용시
 
 		navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
-			
+			console.log('asd');
 			video.srcObject = stream;
 
 			video.setAttribute("playsinline", true);      // iOS 사용시 전체 화면을 사용하지 않음을 전달
