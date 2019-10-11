@@ -29,10 +29,8 @@ $(document).ready(e=>{
 		canvas.stroke();
 
 	}
-
-	navigator.getUserMedia = navigator.getUserMedia ||
-	  		navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 	
+	console.log(navigator)
 	navigator.getUserMedia({ audio: true, video: true }, function success(stream) {
 		console.log('success', arguments);
 
@@ -41,10 +39,13 @@ $(document).ready(e=>{
 		video.setAttribute("playsinline", true);      // iOS 사용시 전체 화면을 사용하지 않음을 전달
 
 		requestAnimationFrame(tick);
+
 	}, function error(error) {
+
 	    console.log('error', arguments);
 	    alert('카메라와 마이크를 허용해주세요');
 	    location.reload();
+
 	});
 
 	function tick() {
