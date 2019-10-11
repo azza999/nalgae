@@ -11,6 +11,7 @@
 			<canvas id="canvas">
 				
 			</canvas>
+			<video id="video"></video>
 		</div>
 		<p id="loadingMessage" class="text-center">QR코드를 비춰주세요!</p>
 		<p id="outputData" class="text-center"></p>
@@ -19,6 +20,7 @@
 
 @section('js')
 	<script src="/public/js/app.js"></script>
+	<script src="/public/js/adaptor.js"></script>
 	<script src="/public/js/qr.js"></script>
 	<script src="/public/js/qr_reader.js"></script>
 @endsection

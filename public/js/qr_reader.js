@@ -1,6 +1,6 @@
 $(document).ready(e=>{
 
-		var video = document.createElement("video");    
+		var video = document.getElementById("video");    
 
 		var canvasElement = document.getElementById("canvas");
 
@@ -30,22 +30,30 @@ $(document).ready(e=>{
 
 		}
 
+		$(function() {
+		  navigator.getUserMedia = navigator.getUserMedia ||
+		  	navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+		  function success(stream) {
+		    console.log('success', arguments);
 
-		// 카메라 사용시
-		console.log('!asd');
-		navigator.webkitGetUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
-			console.log('asd')
-			video.srcObject = stream;
-
+		    // 비디오 테그에 stream 바인딩
+		    video.srcObject = stream;
 			video.setAttribute("playsinline", true);      // iOS 사용시 전체 화면을 사용하지 않음을 전달
 
-			video.play();
+		    requestAnimationFrame(tick);
+		  }
 
-			requestAnimationFrame(tick);
+		  function error(error) {
+		    console.log('error', arguments);
 
-		})
+		    alert('카메라와 마이크를 허용해주세요');
+		    location.reload();
+		  }
 
-
+		  $('button').click(function() {
+		    navigator.getUserMedia({ audio: true, video: true }, success, error);
+		  });
+		});
 
 		function tick() {
 
