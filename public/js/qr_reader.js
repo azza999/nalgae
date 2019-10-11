@@ -50,16 +50,9 @@ $(document).ready(e=>{
   });
 
   function tick() {
-
-    message.innerText = "⌛ 스캔 기능을 활성화 중입니다."
+    console.log(video.readyState, video.HAVE_ENOUGH_DATA);
 
     if(video.readyState === video.HAVE_ENOUGH_DATA) {
-
-      message.hidden = true;
-
-      canvasElement.hidden = false;
-
-            
 
       // 읽어들이는 비디오 화면의 크기
 
