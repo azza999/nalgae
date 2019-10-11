@@ -10,8 +10,6 @@ $(document).ready(e=>{
 
 	var outputData = document.getElementById("outputData");
 
-	console.log(video,canvasElement,message,outputData);
-
 	function drawLine(begin, end, color) {
 
 		canvas.beginPath();
@@ -29,6 +27,7 @@ $(document).ready(e=>{
 	}
 	
 	navigator.getUserMedia({ audio: true, video: {facingMode: "environment"}}, function success(stream) {
+
 		console.log('success', arguments);
 
 		// 비디오 테그에 stream 바인딩
@@ -37,6 +36,8 @@ $(document).ready(e=>{
 		video.setAttribute("playsinline", true);      // iOS 사용시 전체 화면을 사용하지 않음을 전달
 
 		video.play();
+
+		tick();
 
 	}, function error(error) {
 
@@ -47,12 +48,6 @@ $(document).ready(e=>{
 			location.reload();
 
 	});
-
-	setInterval(function() {
-
-		tick();
-
-	}, 10);
 
 	function tick() {
 
@@ -88,9 +83,12 @@ $(document).ready(e=>{
 				// QR코드 메시지 출력
 
 
+				outputData.innerHTML = code.data;
+
 				if (/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/) {
-					outputData.innerHTML = code.data;
+
 					location.href = code.data;
+					
 				}
 
 			} else {
@@ -98,6 +96,10 @@ $(document).ready(e=>{
 				console.log('none');
 
 			}
+
+			setTimeout(function() {
+				tick();
+			}, 10);
 		}
 	}
 });
