@@ -8,7 +8,7 @@
 	<div class="container text-center">
 		<h1 class="text-center">QR코드 리더</h1>
 		<div class="reader-view text-center">
-			<canvas id="canvas">
+			<canvas id="canvas" style="max-width: 100%;">
 				
 			</canvas>
 			<video id="video" muted hidden></video>

@@ -59,9 +59,9 @@ $(document).ready(e=>{
 
 			// 읽어들이는 비디오 화면의 크기
 
-			canvasElement.height = video.videoHeight;
+			canvasElement.height = video.videoHeight * 0.8;
 
-			canvasElement.width = video.videoWidth;
+			canvasElement.width = video.videoWidth * 0.8;
 
 			canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
 
