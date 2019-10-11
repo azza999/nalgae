@@ -15,7 +15,7 @@
 		</div>
 		<p id="loadingMessage" class="text-center">QR코드를 비춰주세요!</p>
 		<p id="outputData" class="text-center"></p>
-		<button>되라제발</button>
+		<a href="supertoss://send?bank=신한&accountNo=110473324141&origin=linkgen&msg=test">되라제발</a>
 	</div>
 @endsection
 
