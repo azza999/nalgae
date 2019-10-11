@@ -1,4 +1,4 @@
-$(document).on('load',function() {
+$(document).ready(function() {
   navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
   /**
