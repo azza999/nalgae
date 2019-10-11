@@ -1,9 +1,5 @@
 $(document).ready(e=>{
 
-	if (location.protocol === 'http:') {
-		location.protocol = 'https:';
-	}
-
 	var video = document.getElementById("video");
 
 	var canvasElement = document.getElementById("canvas");

@@ -11,6 +11,12 @@
 	<meta name="title" content="날개제">
 	<meta name="keyword" content="날개제, 공군, 공군 항공과학고등학교">
 	<meta name="description" content="날개제 웹사이트">
+
+	<script>
+		if (location.protocol === 'http:') {
+			location.protocol = 'https:';
+		}
+	</script>
 	
 	{{-- css --}}
 	<link rel="stylesheet" href="/public/css/app.css">	<!-- bootstrap -->
@@ -24,6 +30,6 @@
 	@yield('content')
 
 	@yield('js')
-	
+
 </body>
 </html>
