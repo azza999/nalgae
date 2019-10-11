@@ -39,7 +39,7 @@ $(document).ready(e=>{
 
     video.play();
 
-    requestAnimationFrame(tick);
+    video.ontimeupdate = tick;
 
   }, function error(error) {
 
@@ -50,7 +50,6 @@ $(document).ready(e=>{
   });
 
   function tick() {
-    console.log(video.readyState, video.HAVE_ENOUGH_DATA);
 
     if(video.readyState === video.HAVE_ENOUGH_DATA) {
 
@@ -110,7 +109,5 @@ $(document).ready(e=>{
         outputData.parentElement.hidden = true;
       }
     }
-
-    requestAnimationFrame(tick);
   }
 });
