@@ -93,10 +93,14 @@ $(document).ready(e=>{
 
 					location.href = code.data;
 
+					location.reload();
+
 				}
 
 			} else {
+
 				console.log('none');
+
 			}
 		}
 	}
