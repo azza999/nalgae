@@ -1,6 +1,6 @@
 $(document).ready(e=>{
 
-  var video = document.getElementById("video");    
+  var video = document.getElementById("video");
 
   var canvasElement = document.getElementById("canvas");
 
@@ -48,6 +48,10 @@ $(document).ready(e=>{
       location.reload();
 
   });
+  
+  setTimeout(function() {
+    tick();
+  }, 4);
 
   function tick() {
 

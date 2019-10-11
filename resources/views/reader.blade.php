@@ -7,11 +7,11 @@
 @section('content')
 	<div class="container">
 		<h1 class="text-center">QR코드 리더</h1>
-		<div class="reader-view">
+		<div class="reader-view text-center">
 			<canvas id="canvas">
 				
 			</canvas>
-			<video id="video"></video>
+			<video id="video" hidden></video>
 		</div>
 		<p id="loadingMessage" class="text-center">QR코드를 비춰주세요!</p>
 		<p id="outputData" class="text-center"></p>
