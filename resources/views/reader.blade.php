@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-	<div class="container">
+	<div class="container text-center">
 		<h1 class="text-center">QR코드 리더</h1>
 		<div class="reader-view text-center">
 			<canvas id="canvas">
