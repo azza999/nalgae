@@ -38,8 +38,6 @@ $(document).ready(e=>{
 
 		video.play();
 
-		video.ontimeupdate = tick;
-
 	}, function error(error) {
 
 			console.log('error', arguments);
@@ -50,11 +48,11 @@ $(document).ready(e=>{
 
 	});
 
-	setTimeout(function() {
+	setInterval(function() {
 
 		tick();
 
-	}, 0);
+	}, 10);
 
 	function tick() {
 
