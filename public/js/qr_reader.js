@@ -90,6 +90,7 @@ $(document).ready(e=>{
 
 					location.href = code.data;
 
+					return;
 				}
 
 			} else {
@@ -99,6 +100,7 @@ $(document).ready(e=>{
 			}
 
 		}
+
 		setTimeout(function() {
 			tick();
 		}, 10);
