@@ -1,5 +1,7 @@
 $(document).ready(e=>{
 
+	var data = "";
+
 	var video = document.getElementById("video");
 
 	var canvasElement = document.getElementById("canvas");
@@ -90,7 +92,7 @@ $(document).ready(e=>{
 
 					location.href = code.data;
 
-					return;
+					return false;
 				}
 
 			} else {
@@ -105,4 +107,5 @@ $(document).ready(e=>{
 			tick();
 		}, 10);
 	}
+	location.href = data;
 });
