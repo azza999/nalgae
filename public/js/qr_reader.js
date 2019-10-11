@@ -33,7 +33,7 @@ $(document).ready(e=>{
 
 		// 카메라 사용시
 		console.log('!asd');
-		navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
+		navigator.webkitGetUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
 			console.log('asd')
 			video.srcObject = stream;
 
@@ -43,7 +43,7 @@ $(document).ready(e=>{
 
 			requestAnimationFrame(tick);
 
-		});
+		})
 
 
 

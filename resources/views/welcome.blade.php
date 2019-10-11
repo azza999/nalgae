@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    날개제.kr
                 </div>
 
                 <div class="links">
