@@ -98,9 +98,9 @@ $(document).ready(e=>{
 
 			}
 
-			setTimeout(function() {
-				tick();
-			}, 10);
 		}
+		setTimeout(function() {
+			tick();
+		}, 10);
 	}
 });
