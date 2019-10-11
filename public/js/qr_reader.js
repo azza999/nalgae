@@ -43,7 +43,7 @@ $(document).ready(e=>{
 
 	}, function error(error) {
 
-			alert(JSON.stringify(error));
+			alert(JSON.stringify(arguments));
 
 			location.reload();
 
