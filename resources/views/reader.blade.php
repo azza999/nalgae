@@ -19,9 +19,9 @@
 @endsection
 
 @section('js')
-	
-	<script src="/public/js/app.js"></script>
+
 	<script src="/public/js/adaptor.js"></script>
+	<script src="/public/js/app.js"></script>
 	<script src="/public/js/qr.js"></script>
 	<script src="/public/js/qr_reader.js"></script>
 
