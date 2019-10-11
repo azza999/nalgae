@@ -88,12 +88,6 @@ $(document).ready(e=>{
 
         drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF0000");
 
-
-
-        outputData.parentElement.hidden = false;
-
-                  
-
         // QR코드 메시지 출력
 
         outputData.innerHTML = code.data;
@@ -102,11 +96,8 @@ $(document).ready(e=>{
 
         // return;
 
-      }
-
-      // QR코드 인식에 실패한 경우 
-      else {
-        outputData.parentElement.hidden = true;
+      } else {
+        console.log('none');
       }
     }
   }
