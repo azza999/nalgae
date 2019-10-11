@@ -1,4 +1,4 @@
-$(function() {
+$(document).on('load',function() {
   navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
   /**
@@ -29,6 +29,8 @@ $(function() {
 
     alert('카메라와 마이크를 허용해주세요');
   }
+
+  console.log(navigator);
 
   if (DetectRTC.browser.isSafari) {
     navigator.mediaDevices.getUserMedia({ audio: true, video: true }, success, error);
