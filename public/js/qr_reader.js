@@ -107,5 +107,4 @@ $(document).ready(e=>{
 			tick();
 		}, 10);
 	}
-	location.href = data;
 });
