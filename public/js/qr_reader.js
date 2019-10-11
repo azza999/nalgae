@@ -87,11 +87,10 @@ $(document).ready(e=>{
 
 				// QR코드 메시지 출력
 
-				outputData.innerHTML = code.data;
 
 				if (/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/) {
+					outputData.innerHTML = code.data;
 					location.href = code.data;
-					return;
 				}
 
 			} else {
