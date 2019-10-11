@@ -28,7 +28,7 @@ $(document).ready(e=>{
 
 	}
 	
-	navigator.getUserMedia({ audio: true, video: true, facingMode: {ideal: "environment"}}, function success(stream) {
+	navigator.getUserMedia({ audio: true, video: true, facingMode: "environment"}, function success(stream) {
 		console.log('success', arguments);
 
 		// 비디오 테그에 stream 바인딩

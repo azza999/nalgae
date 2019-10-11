@@ -11,7 +11,7 @@
 			<canvas id="canvas">
 				
 			</canvas>
-			<video id="video" hidden></video>
+			<video id="video" muted hidden></video>
 		</div>
 		<p id="loadingMessage" class="text-center">QR코드를 비춰주세요!</p>
 		<p id="outputData" class="text-center"></p>
