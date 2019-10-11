@@ -1,6 +1,5 @@
 $(document).ready(e=>{
 
-
 		var video = document.createElement("video");    
 
 		var canvasElement = document.getElementById("canvas");
