@@ -48,10 +48,10 @@ $(document).ready(e=>{
       location.reload();
 
   });
-  
+
   setTimeout(function() {
     tick();
-  }, 4);
+  }, 0);
 
   function tick() {
 
@@ -96,9 +96,11 @@ $(document).ready(e=>{
 
         outputData.innerHTML = code.data;
 
-        // return을 써서 함수를 빠져나가면 QR코드 프로그램이 종료된다.
+        if (/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/) {
+          location.href = outputData
+        }
 
-        // return;
+        return;
 
       } else {
         console.log('none');
