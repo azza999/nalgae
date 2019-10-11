@@ -90,11 +90,8 @@ $(document).ready(e=>{
 				outputData.innerHTML = code.data;
 
 				if (/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)$/) {
-
 					location.href = code.data;
-
-					location.reload();
-
+					return;
 				}
 
 			} else {
