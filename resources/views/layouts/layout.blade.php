@@ -6,7 +6,7 @@
 	
 	{{-- 메타 태그  세팅 --}}
 	<meta charset="UTF-8">
-	<meta name="CSRF-TOKEN" content="{{}}">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="viewport" content="width=device-width">
 	<meta name="title" content="날개제">
 	<meta name="keyword" content="날개제, 공군, 공군 항공과학고등학교">
