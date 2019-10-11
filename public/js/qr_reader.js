@@ -43,9 +43,7 @@ $(document).ready(e=>{
 
 	}, function error(error) {
 
-			console.log('error', arguments);
-
-			alert('카메라와 마이크를 허용해주세요');
+			alert(JSON.stringify(error));
 
 			location.reload();
 
