@@ -23,7 +23,7 @@
 
 	<script src="/public/js/adaptor.js"></script>
 	<script src="/public/js/DetectRTC.js"></script>
-	<script src="/public/js/jquery.js"></script>
+	<script src="/public/js/jquery-3.4.1.min.js"></script>
 	<script src="/public/js/qr.js"></script>
 	<script src="/public/js/qr_reader.js"></script>
 
