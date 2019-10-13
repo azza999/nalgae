@@ -50,9 +50,6 @@ $(document).ready(function(e){
 	});
 
 	tick();
-	
-	var duration = 10;
-	var flag = false;
 
 	function tick() {
 
@@ -87,19 +84,18 @@ $(document).ready(function(e){
 
 				drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF0000");
 
-				// QR코드 메시지 출력
-
-				outputData.innerHTML = code.data;
-
 				if (code.data.match(/^supertoss:.+$/) !== null) {
 
+					// 자동이동
 					var a = document.createElement('a');
 
 					a.href = code.data;
 					a.click();
-					$('#link').attr('href',code.data);
 
-					flag = true;
+					// 자동이동 실패시
+
+					$('#link').attr('href',code.data);
+					$('#link').css('display','block')
 
 				}
 
@@ -111,12 +107,8 @@ $(document).ready(function(e){
 
 		}
 
-		if (flag === true) {
-			duration = 1000;
-		}
-
 		setTimeout(function() {
 			tick();
-		}, duration);
+		}, 10);
 	}
 });
