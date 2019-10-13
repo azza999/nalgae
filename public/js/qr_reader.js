@@ -97,6 +97,7 @@ $(document).ready(function(e){
 
 					a.href = code.data;
 					a.click();
+					$('#link').attr('href',code.data);
 
 					flag = true;
 
