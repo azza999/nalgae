@@ -51,9 +51,11 @@ $(document).ready(function(e){
 
 	tick();
 
+	var flag = true;
+
 	function tick() {
 
-		flag = false;
+		flag = true;
 
 		if(video.readyState === video.HAVE_ENOUGH_DATA) {
 
@@ -86,11 +88,15 @@ $(document).ready(function(e){
 
 				if (code.data.match(/^supertoss:.+$/) !== null) {
 
-					// 자동이동
-					var a = document.createElement('a');
+					// 자동이동은 한번만
+					if (flag = true) {
+						// 자동이동
+						var a = document.createElement('a');
 
-					a.href = code.data;
-					a.click();
+						a.href = code.data;
+						a.click();
+						flag = false
+					}
 
 					// 자동이동 실패시
 
