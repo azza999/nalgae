@@ -92,8 +92,6 @@ $(document).ready(function(e){
 
 					a.href = code.data;
 					a.click();
-
-					return true;
 				}
 
 			} else {

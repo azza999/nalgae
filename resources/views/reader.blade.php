@@ -1,12 +1,17 @@
 @extends('layouts.layout')
 
 @section('css')
-	
+	<style>
+		.reader { width: 100%; padding: 30px 20px; }
+		#outputData { max-width: 100%; }
+	</style>
 @endsection
 
 @section('content')
-	<div class="container text-center">
-		<h1 class="text-center">QR코드 리더</h1>
+	<div class="container text-center reader">
+		<div class="section-title">
+			<h2 class="text-center">QR코드 리더</h2>
+		</div>
 		<div class="reader-view text-center">
 			<canvas id="canvas" style="max-width: 100%;">
 				
