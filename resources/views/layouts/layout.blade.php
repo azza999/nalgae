@@ -43,7 +43,6 @@
 				</div>
 				<nav class="nav col-12 justify-content-around mt-3">
 					<a href="#" class="nav-item">일정표</a>
-					<a href="#" class="nav-item">약도</a>
 					<a href="#" class="nav-item">퍼레이드</a>
 					<a href="#" class="nav-item">스탬프 투어</a>
 					<a href="#" class="nav-item">전시회</a>
