@@ -91,7 +91,7 @@ $(document).ready(function(e){
 
 				outputData.innerHTML = code.data;
 
-				if (/^supertoss:\/\/.+$/) {
+				if (code.data.match(/^supertoss:.+$/) !== null) {
 
 					var a = document.createElement('a');
 
