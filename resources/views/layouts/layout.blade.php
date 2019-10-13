@@ -28,27 +28,25 @@
 <body>
 	<div class="header-padder"></div>
 	<header>
-		<div class="container">
-			<div class="row pt-3">
-				<div class="logo col-md-12 col-12 d-flex justify-content-between">
-					<a class="header-btn" href="{{route('home')}}">
-						<img src="/public/img/home.svg" alt="1">
-					</a>
-					<a href="{{route('home')}}" class="logo-box">
-						<img src="/public/img/logo.png" alt="">
-					</a>
-					<a class="header-btn" href="{{route('reader')}}">
-						<img src="/public/img/QRQR.png" alt="qr code reader">
-					</a>
-				</div>
-				<nav class="nav col-12 justify-content-around mt-3">
-					<a href="#" class="nav-item">일정표</a>
-					<a href="#" class="nav-item">퍼레이드</a>
-					<a href="#" class="nav-item">스탬프 투어</a>
-					<a href="#" class="nav-item">전시회</a>
-					<a href="#" class="nav-item">Q&A</a>
-				</nav>
+		<div class="container d-flex">
+			<div class="logo col-md-12 col-12 d-flex justify-content-between">
+				<a class="header-btn" href="{{route('home')}}">
+					<img src="/public/img/home.svg" alt="1">
+				</a>
+				<a href="{{route('home')}}" class="logo-box">
+					<img src="/public/img/logo.png" alt="">
+				</a>
+				<a class="header-btn" href="{{route('reader')}}">
+					<img src="/public/img/QRQR.png" alt="qr code reader">
+				</a>
 			</div>
+			<nav class="nav col-12 justify-content-around mt-3">
+				<a href="#" class="nav-item">일정표</a>
+				<a href="#" class="nav-item">퍼레이드</a>
+				<a href="#" class="nav-item">스탬프 투어</a>
+				<a href="#" class="nav-item">전시회</a>
+				<a href="#" class="nav-item">Q&A</a>
+			</nav>
 		</div>
 	</header>
 
