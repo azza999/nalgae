@@ -15,6 +15,10 @@ Route::get('/qrcode',function() {
 	return view('reader');
 })->name('reader');
 
+Route::get('/home', function () {
+    return view('index');
+})->name('home');
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
