@@ -50,6 +50,9 @@ $(document).ready(function(e){
 	});
 
 	tick();
+	
+	var duration = 10;
+	var flag = false;
 
 	function tick() {
 
@@ -92,6 +95,9 @@ $(document).ready(function(e){
 
 					a.href = code.data;
 					a.click();
+
+					flag = true;
+
 				}
 
 			} else {
@@ -102,8 +108,12 @@ $(document).ready(function(e){
 
 		}
 
+		if (flag === true) {
+			duration = 1000;
+		}
+
 		setTimeout(function() {
 			tick();
-		}, 10);
+		}, duration);
 	}
 });
