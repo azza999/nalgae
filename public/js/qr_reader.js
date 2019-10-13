@@ -1,4 +1,4 @@
-$(document).ready(e=>{
+$(document).ready(function(e){
 
 	var data = "";
 

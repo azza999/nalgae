@@ -15,10 +15,6 @@ Route::get('/qrcode',function() {
 	return view('reader');
 })->name('reader');
 
-Route::get('/temp',function() {
-	return view('temp');
-})->name('temp');
-
 Route::get('/', function () {
     return view('welcome');
 });

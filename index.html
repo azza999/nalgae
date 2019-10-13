@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>날개제.kr</title>
+
+	<meta charset="UTF-8">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta name="viewport" content="width=device-width">
+	<meta name="title" content="날개제">
+	<meta name="keyword" content="날개제, 공군, 공군 항공과학고등학교">
+	<meta name="description" content="날개제 웹사이트">
+	
+	<script>
+		if (location.protocol === 'http:') {
+			location.protocol = 'https:';
+		}
+	</script>
+
+	<link rel="stylesheet" href="./public/css/app.css">	<!-- bootstrap -->
+	<link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+	<div class="header-padder"></div>
+	<header>
+		<div class="container">
+			<div class="row pt-3">
+				<div class="logo col-md-12 col-12 d-flex justify-content-between">
+					<a class="header-btn" href="{{route('home')}}">
+						<img src="./public/img/home.svg" alt="1">
+					</a>
+					<a href="{{route('home')}}" class="logo-box">
+						<img src="./public/img/logo.png" alt="">
+					</a>
+					<a class="header-btn" href="/qrcode">
+						<img src="./public/img/QRQR.png" alt="qr code reader">
+					</a>
+				</div>
+				<nav class="nav col-12 justify-content-around mt-3">
+					<a href="#" class="nav-item mg-">일정표</a>
+					<a href="#" class="nav-item mg-">약도</a>
+					<a href="#" class="nav-item mg-">퍼레이드</a>
+					<a href="#" class="nav-item mg-">스탬프 투어</a>
+					<a href="#" class="nav-item mg-">전시회</a>
+					<a href="#" class="nav-item mg-">Q&A</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="poster">
+		<img src="./public/img/" alt="포스터 이미지" title="포스터 이미지">
+	</main>
+</body>
+</html>
