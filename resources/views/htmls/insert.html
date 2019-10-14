@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>@yield('title','날개제.kr')</title>
+	
+	
+	<!-- 메타 태그  세팅 -->
+	<meta charset="UTF-8">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta name="viewport" content="width=device-width">
+	<meta name="title" content="날개제">
+	<meta name="keyword" content="날개제, 공군, 공군 항공과학고등학교">
+	<meta name="description" content="날개제 웹사이트">
+
+	<script>
+		if (location.protocol === 'http:') {
+			location.protocol = 'https:';
+		}
+	</script>
+	
+	<!-- css -->
+	<link rel="stylesheet" href="../../../public/css/app.css">	<!-- bootstrap -->
+	<link rel="stylesheet" href="../../../public/css/styles.css">
+
+</head>
+<body>
+	<div class="header-padder"></div>
+	<header>
+		<div class="container">
+			<div class="logo d-flex justify-content-between mt-3">
+				<a class="header-btn" href="{{route('home')}}">
+					<img src="../../../public/img/home.svg" alt="1">
+				</a>
+				<a href="{{route('home')}}" class="logo-box">
+					<img src="../../../public/img/logo.png" alt="">
+				</a>
+				<a class="header-btn" href="{{route('reader')}}">
+					<img src="../../../public/img/QRQR.png" alt="qr code reader">
+				</a>
+			</div>
+			<nav class="nav justify-content-around mt-1">
+				<a href="#calendar" class="nav-item">일정표</a>
+				<a href="./parade" class="nav-item">퍼레이드</a>
+				<a href="./stamp" class="nav-item">스탬프 투어</a>
+				<a href="./exhibit" class="nav-item">전시회</a>
+				<a href="./QnA" class="nav-item">Q&A</a>
+			</nav>
+		</div>
+	</header>
+	
+	<form action="/insert_infos" method="post">
+		<section class="container insert" id="insert">
+			<div class="card mt-5 mb-5">
+				<div class="card-body">
+					<div class="section-title">
+						<h2>퍼레이드 위치 지정</h2>
+					</div>
+					<p class="text-center text-danger mb-2 mt-3">학생 이름은 "기수/이름" 으로 정확히 입력해 주세요! (ex: 49/김도현 )</p>
+					<p class="text-center text-danger">5열이 아닐시 1열부터 좌측으로 채워주세요 (관악부 4열 설정시 5열을 비우면 됩니다.)</p>
+					<div class="form-group">
+						@csrf
+						<div class="input-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text">제대 번호</span>
+							</div>
+							<select name="num" id="num" class="form-control">
+								<option value="0">관악 제대</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+							</select>
+						</div>
+						<div class="form-group mt-5">
+							<label for="cap">제대 지휘자</label>
+							<input type="text" class="form-control" id="cap">
+						</div>
+						<div class="form-group mt-1">
+							<label for="flag">제대 기수</label>
+							<input type="text" class="form-control" id="flag">
+						</div>
+						<div class="jd table-responsive">
+							<table>
+								<thead>
+									<tr>
+										<th></th>
+										<th>5열</th>
+										<th>4열</th>
+										<th>3열</th>
+										<th>2열</th>
+										<th>1열</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1오</td>
+										<td><input class="form-control" type="text" data-row="1" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="1" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="1" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="1" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="1" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>2오</td>
+										<td><input class="form-control" type="text" data-row="2" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>2오</td>
+										<td><input class="form-control" type="text" data-row="2" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="2" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>3오</td>
+										<td><input class="form-control" type="text" data-row="3" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="3" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="3" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="3" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="3" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>4오</td>
+										<td><input class="form-control" type="text" data-row="4" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="4" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="4" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="4" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="4" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>5오</td>
+										<td><input class="form-control" type="text" data-row="5" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="5" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="5" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="5" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="5" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>6오</td>
+										<td><input class="form-control" type="text" data-row="6" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="6" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="6" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="6" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="6" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>7오</td>
+										<td><input class="form-control" type="text" data-row="7" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="7" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="7" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="7" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="7" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>8오</td>
+										<td><input class="form-control" type="text" data-row="8" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="8" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="8" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="8" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="8" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>9오</td>
+										<td><input class="form-control" type="text" data-row="9" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="9" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="9" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="9" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="9" data-col="1"></td>
+									</tr>
+									<tr>
+										<td>10오</td>
+										<td><input class="form-control" type="text" data-row="10" data-col="5"></td>
+										<td><input class="form-control" type="text" data-row="10" data-col="4"></td>
+										<td><input class="form-control" type="text" data-row="10" data-col="3"></td>
+										<td><input class="form-control" type="text" data-row="10" data-col="2"></td>
+										<td><input class="form-control" type="text" data-row="10" data-col="1"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer text-right ">
+					<button class="btn btn-danger">지우기</button>
+					<button class="btn btn-primary">등록하기</button>
+				</div>
+			</div>
+		</section>
+	</form>
+	
+	<footer>
+		<div class="contact">
+			<div class="container">
+				<div class="mx-5">
+					<p class="mb-3 pt-3 text-center">공군 항공과학고등학교 날개제 위원회</p>
+					<p class="mb-1">주소&nbsp;&nbsp;&nbsp;경남 진주시 금산면 송백로 44-3</p>
+					<p class="m-0 pb-3">전화&nbsp;&nbsp;&nbsp;055-750-2121</p>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<div class="container text-center p-3">
+				<p>azzadh999@gmail.com</p>
+				<p>2019 AFASHS 김도현, All Rights Reserved | 36th AFASHS ASSEMBLE</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

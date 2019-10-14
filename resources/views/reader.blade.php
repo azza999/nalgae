@@ -1,5 +1,7 @@
 @extends('layouts.layout')
 
+@section('title','QR 코드 리더')
+
 @section('css')
 	<style>
 		.reader { width: 100%; padding: 30px 20px; }

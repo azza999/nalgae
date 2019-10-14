@@ -55,11 +55,17 @@ footer .copy p:nth-child(1) { letter-spacing: 0.5px; }
 
 #parade { width: 100%; padding: 30px 0 50px 0; }
 #parade .section-title { padding-bottom: 30px; }
-.jd { width: 100%; padding-bottom: 30px; }
-.jd-row-first { justify-content: center }
-.left-title { font-size: 24px; height: 100%;border-right: 1px solid #a9a9a9; position: relative; padding-right: 10px; margin-right: 20px; display: flex; align-items: center; height: 500px; }
-.left-title::after { content: ''; width: 20px; height: 1px; background-color: #a9a9a9; display: block; position: absolute; left: 100%; top: 0; }
-.left-title::before { content: ''; width: 20px; height: 1px; background-color: #a9a9a9; display: block; position: absolute; left: 100%; bottom: 0; }
-.content {  }
-.cell { width: 40px; height: 40px; position: relative; border-radius: 50px; background-color: #a9a9a9; margin: 5px; }
+#parade .jd { width: 100%; padding-bottom: 30px; }
+#parade .jd-row { width: 250px; }
+#parade .jd-row-first { justify-content: center }
+#parade .left-title { font-size: 18px; width: 85px; height: 100%;border-right: 1px solid #a9a9a9; position: relative; padding-right: 10px; margin-right: 20px; display: flex; align-items: center; }
+#parade .left-title::after { content: ''; width: 20px; height: 1px; background-color: #a9a9a9; display: block; position: absolute; left: 100%; top: 0; }
+#parade .left-title::before { content: ''; width: 20px; height: 1px; background-color: #a9a9a9; display: block; position: absolute; left: 100%; bottom: 0; }
+#parade .cell { width: 40px; height: 40px; position: relative; border-radius: 50px; background-color: #a9a9a9; margin: 5px; }
 
+#insert .section-title { margin-top: 30px; }
+#insert table { border-collapse: collapse; max-width: 100%; overflow-y: scroll; margin: 0 auto; margin-top: 30px; }
+#insert th { text-align: center; }
+#insert td:nth-child(1) { min-width: 40px; }
+#insert td { text-align: center; height: 50px; }
+#insert td input { padding: 5px 10px; }
