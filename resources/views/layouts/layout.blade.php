@@ -77,7 +77,7 @@
 			if (location.href.match(/home$/) === null) {
 				location.href = "https://xn--h49aq9fm9y.kr/home#calendar";
 			} else {
-				$('html, body').animate('scrollTop',$('#calendar').offset().top,400);
+				$('html, body').animate('scrollTop',$('#calendar').offset().top);
 			}
 		});
 	</script>
