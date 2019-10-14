@@ -41,7 +41,6 @@
 				</a>
 			</div>
 			<nav class="nav justify-content-around mt-1">
-				<a href="/intro" class="nav-item">소개</a>
 				<div id="go-calendar" class="nav-item">일정표</div>
 				<a href="/parade" class="nav-item">퍼레이드</a>
 				<a href="/stamp" class="nav-item">스탬프 투어</a>
@@ -52,19 +51,6 @@
 	</header>
 
 	@yield('content')
-
-	@yield('js')
-
-	<script>
-		$('#go-calendar').on('click',function(e) {
-			e.preventDefault();
-			if (location.href.match(/home$/) === null) {
-				location.href = "https://xn--h49aq9fm9y.kr/home#calendar";
-			} else {
-				$('html, body').animate('scrollTop',$('#calendar').offset().top,400);
-			}
-		});
-	</script>
 	
 	<footer>
 		<div class="contact">
@@ -83,5 +69,19 @@
 			</div>
 		</div>
 	</footer>
+	
+	<script src="/public/js/jquery-3.4.1.min.js"></script>
+	<script>
+		$('#go-calendar').on('click',function(e) {
+			e.preventDefault();
+			if (location.href.match(/home$/) === null) {
+				location.href = "https://xn--h49aq9fm9y.kr/home#calendar";
+			} else {
+				$('html, body').animate('scrollTop',$('#calendar').offset().top,400);
+			}
+		});
+	</script>
+
+	@yield('js')
 </body>
 </html>
