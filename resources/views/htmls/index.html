@@ -19,10 +19,8 @@
 	</script>
 	
 	{{-- css --}}
-	<link rel="stylesheet" href="/public/css/app.css">	<!-- bootstrap -->
-	<link rel="stylesheet" href="/public/css/styles.css">
-
-	 @yield('css')
+	<link rel="stylesheet" href="../../../public/css/app.css">	<!-- bootstrap -->
+	<link rel="stylesheet" href="../../../public/css/styles.css">
 
 </head>
 <body>
@@ -31,29 +29,40 @@
 		<div class="container">
 			<div class="logo d-flex justify-content-between mt-3">
 				<a class="header-btn" href="{{route('home')}}">
-					<img src="/public/img/home.svg" alt="1">
+					<img src="../../../public/img/home.svg" alt="1">
 				</a>
 				<a href="{{route('home')}}" class="logo-box">
-					<img src="/public/img/logo.png" alt="">
+					<img src="../../../public/img/logo.png" alt="">
 				</a>
 				<a class="header-btn" href="{{route('reader')}}">
-					<img src="/public/img/QRQR.png" alt="qr code reader">
+					<img src="../../../public/img/QRQR.png" alt="qr code reader">
 				</a>
 			</div>
 			<nav class="nav justify-content-around mt-1">
-				<a href="/intro" class="nav-item">소개</a>
 				<a href="#calendar" class="nav-item">일정표</a>
-				<a href="/parade" class="nav-item">퍼레이드</a>
-				<a href="/stamp" class="nav-item">스탬프 투어</a>
-				<a href="/exhibit" class="nav-item">전시회</a>
-				<a href="/QnA" class="nav-item">Q&A</a>
+				<a href="./parade" class="nav-item">퍼레이드</a>
+				<a href="./stamp" class="nav-item">스탬프 투어</a>
+				<a href="./exhibit" class="nav-item">전시회</a>
+				<a href="./QnA" class="nav-item">Q&A</a>
 			</nav>
 		</div>
 	</header>
 
-	@yield('content')
-
-	@yield('js')
+	<main class="poster">
+		<img src="../../../public/img/poster.png" alt="포스터 이미지">
+	</main>
+	<div class="map">
+		<div class="section-title">
+			<h2>항과고 약도</h2>
+		</div>
+		<img src="../../../public/img/map.jpg" alt="">
+	</div>
+	<div class="calendar" id="calendar">
+		<div class="section-title">
+			<h2>날개제 일정</h2>
+		</div>
+		<img src="../../../public/img/calendar.png" alt="">
+	</div>
 	
 	<footer>
 		<div class="contact">

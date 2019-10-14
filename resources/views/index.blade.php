@@ -14,7 +14,7 @@
 	</div>
 	<img src="/public/img/map.jpg" alt="">
 </div>
-<div class="calendar">
+<div class="calendar" id="calendar">
 	<div class="section-title">
 		<h2>날개제 일정</h2>
 	</div>
