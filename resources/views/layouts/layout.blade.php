@@ -56,7 +56,8 @@
 	@yield('js')
 
 	<script>
-		$('#go-calendar').on('click',function() {
+		$('#go-calendar').on('click',function(e) {
+			e.preventDefault();
 			if (location.href.match(/home$/) === null) {
 				location.href = "https://xn--h49aq9fm9y.kr/home#calendar";
 			} else {
