@@ -73,11 +73,10 @@
 	<script src="/public/js/jquery-3.4.1.min.js"></script>
 	<script>
 		$('#go-calendar').on('click',function(e) {
-			e.preventDefault();
 			if (location.href.match(/home$/) === null) {
 				location.href = "https://xn--h49aq9fm9y.kr/home#calendar";
 			} else {
-				$('html, body').animate('scrollTop',$('#calendar').offset().top);
+				scroll({top: $('#calendar').offset().top - 20,  behavior: 'smooth'})
 			}
 		});
 	</script>
