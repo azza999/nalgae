@@ -42,7 +42,7 @@
 			</div>
 			<nav class="nav justify-content-around mt-1">
 				<a href="/intro" class="nav-item">소개</a>
-				<a href="#calendar" id="go-calendar" class="nav-item">일정표</a>
+				<a href="/home#calendar" id="go-calendar" class="nav-item">일정표</a>
 				<a href="/parade" class="nav-item">퍼레이드</a>
 				<a href="/stamp" class="nav-item">스탬프 투어</a>
 				<a href="/exhibit" class="nav-item">전시회</a>
