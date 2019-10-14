@@ -160,7 +160,7 @@
 		</div>
 	</section>
 </form>
-<form action="/insert_fixed" method="post">
+<form action="/insert_fixed" class="container" method="post">
 	<div class="card">
 		<div class="card-body">
 			<div class="container insert_fixed">
@@ -183,7 +183,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-footer">
+		<div class="card-footer text-right">
 			<button class="btn btn-primary">등록하기</button>
 		</div>
 	</div>
