@@ -39,6 +39,10 @@ Route::get('/insert', function() {
 	return view('insert');
 })->name('insert');
 
+Route::post('/insert_fixed','MainController@insert_fixed');
+
+Route::post('/insert_infos','MainController@insert_infos');
+
 Route::get('/', function () {
     return redirect('home');
 });
