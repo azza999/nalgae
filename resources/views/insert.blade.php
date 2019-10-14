@@ -12,6 +12,7 @@
 				</div>
 				<p class="text-center text-danger mb-2 mt-3">학생 이름은 "기수/이름" 으로 정확히 입력해 주세요! (ex: 49/김도현 )</p>
 				<p class="text-center text-danger">5열이 아닐시 1열부터 좌측으로 채워주세요 (관악부 4열 설정시 5열을 비우면 됩니다.)</p>
+				<p class="text-center text-danger">지휘자는 1오 </p>
 				<div class="form-group">
 					@csrf
 					<div class="input-group">
@@ -51,6 +52,14 @@
 								</tr>
 							</thead>
 							<tbody>
+								<tr>
+									<td>0오</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><input class="form-control" placeholder="기수" type="text" data-row="1" data-col="2"></td>
+									<td><input class="form-control" placeholder="지휘자" type="text" data-row="1" data-col="1"></td>
+								</tr>
 								<tr>
 									<td>1오</td>
 									<td><input class="form-control" type="text" data-row="1" data-col="5"></td>
@@ -157,12 +166,20 @@
 			<div class="container insert_fixed">
 				@csrf
 				<div class="form-group">
-					<label for="special-name"></label>
+					<label for="special-name">이름</label>
 					<input type="text" id="special-name" name="name" class="form-control">
 				</div>
 				<div class="form-group">
-					<label for="special-role"></label>
-					<input type="text" id="special-role" name="role" class="form-control">
+					<label for="special-role">직책</label>
+					<select name="role" class="form-control" id="special-role">
+						<option value="0">전체 기수</option>
+						<option value="1">총학생회 회장</option>
+						<option value="2">총학생회 계획부장</option>
+						<option value="3">총학생회 총무부장</option>
+						<option value="4">총학생회 학습부장</option>
+						<option value="5">총학생회 문화부장</option>
+						<option value="6">총학생회 봉사부장</option>
+					</select>
 				</div>
 			</div>
 		</div>
