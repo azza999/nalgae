@@ -40,5 +40,5 @@ Route::get('/insert', function() {
 })->name('insert');
 
 Route::get('/', function () {
-    return view('index');
+    return redirect('home');
 });
