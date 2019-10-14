@@ -15,7 +15,7 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->bigIncrements('sid');
-            $table->integer('jid')
+            $table->integer('jid');
             $table->integer('cn');  //cardinal number
             $table->string('name');
             $table->integer('row')->nullable();
