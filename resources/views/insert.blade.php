@@ -213,26 +213,8 @@
 
 			    url:'/get_jd/'+val,
 
-			    data:{
-			    	student: {
-			    		name: info.name,
-			    		cn: info.cn,
-			    		col: null,
-			    		row: null,
-			    		role: role,
-			    		type: 'fixed',
-			    	}
-				},
-
 			    success:function(data){
-			    	console.log({
-			    		name: info.name,
-			    		cn: info.cn,
-			    		col: null,
-			    		row: null,
-			    		role: role,
-			    		type: 'fixed',
-			    	});
+			    	
 			    	console.log(data);
 
 				}
