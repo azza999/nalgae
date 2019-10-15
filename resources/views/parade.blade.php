@@ -645,7 +645,7 @@
 			return;
 		}
 
-		$tgt.css('animation','highlight 1s infiniate pulse')
+		$tgt.css('animation','highlight pulse 1s infinite');
 
 		scroll({top: $tgt.offset().top - 200,  behavior: 'smooth'})
 	}
