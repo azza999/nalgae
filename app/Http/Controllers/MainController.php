@@ -16,19 +16,18 @@ class MainController extends Controller
 
 		foreach ($arr as $row) {
 			foreach ($row as $stu) {
-				if ($stu['cn'] === '' || $stu['cn'] === null) {
-					continue;
+				if (!($stu['cn'] === '' || $stu['cn'] === null)) {
+					DB::table('students')->insert([
+						'jid' => $stu['jid'],
+						'cn' => $stu['cn'],
+						'name' => $stu['name'],
+						'col' => $stu['col'],
+						'row' => $stu['row'],
+						'role' => $stu['role'],
+						'type' => $stu['type'],
+					]);
 				}
 
-				DB::table('students')->insert([
-					'jid' => $stu['jid'],
-					'cn' => $stu['cn'],
-					'name' => $stu['name'],
-					'col' => $stu['col'],
-					'row' => $stu['row'],
-					'role' => $stu['role'],
-					'type' => $stu['type'],
-				]);
 			}
 		}
 
