@@ -11,13 +11,15 @@ class MainController extends Controller
     public function insert_infos(Request $req)
     {
 		$arr = $req->input('arr');
+		echo $arr[0][0]['jid'];
 		DB::query("DELETE FROM students WHERE jid = ?",[$arr[0][0]['jid']]);
 
 		foreach ($arr as $row) {
 			foreach ($row as $stu) {
 				if ($stu['name'] === '' || $stu['name'] === null) {
-					continue;
+					return;
 				}
+
 				DB::table('students')->insert([
 					'jid' => $stu['jid'],
 					'cn' => $stu['cn'],
@@ -31,6 +33,8 @@ class MainController extends Controller
 		}
 
 		echo true;
+
+		return true;
     }
     public function text(Request $req)
     {
