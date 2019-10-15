@@ -2,6 +2,7 @@
 
 @section('title','퍼레이드 위치찾기')
 @section('css')
+<link rel="stylesheet" href="/public/css/jquery-toast.css">
 @endsection
 
 @section('content')
@@ -583,6 +584,7 @@
 @endsection
 
 @section('js')
+<script src="/public/js/jquery-toast.js"></script>
 <script>
 	let ga = JSON.parse('{!! json_encode($ga) !!}');
 	let $ga = $('#ga').children('.content');
@@ -618,6 +620,14 @@
 	})
 	function search() {
 		let name = $('#search-input').val();
+
+		if (name.match(/^\d\d[가-힣a-cA-C]+$/) === null) {
+			$.toast('일치하는 학생이 없습니다',{
+				duration: 1000,
+				stack: 1,
+			})
+		}
+
 		let $tgt = $('.cell[data-name='+name+']');
 		scroll({top: $tgt.offset().top - 200,  behavior: 'smooth'})
 	}
