@@ -213,6 +213,15 @@
 
 			$('.cell-input').each(function(i,ele) {
 				let student = getStudentInfo($(ele).val());
+				console.log({
+					jid: jdNum,
+					cn: student.cn,
+					name: student.name,
+					col: $(ele).data('col'),
+					row: $(ele).data('row'),
+					role: null,
+					type: 'normal'
+				})
 				arr[$(ele).data('row')][$(ele).data('col')] = {
 					jid: jdNum,
 					cn: student.cn,
