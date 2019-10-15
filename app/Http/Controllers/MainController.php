@@ -65,6 +65,19 @@ class MainController extends Controller
     	}
     }
 
+    public function parade(Request $req)
+    {
+    	$ga = DB::select("SELECT * FROM students WHERE jid = 0");
+    	
+    	$jds = [];
+
+    	for ($i=1; $i <= 8; $i++) { 
+    		$jds[] = DB::select("SELECT * FROM students WHERE jid = ?",[$i]);
+    	}
+
+    	return view('parade',compact('ga','jds'));
+    }
+
     // 계좌번호 국민 700102-01-111832 이정민
 
 }

@@ -19,9 +19,7 @@ Route::get('/home', function () {
     return view('index');
 })->name('home');
 
-Route::get('/parade', function() {
-	return view('parade');
-})->name('parade');
+Route::get('/parade','MainController@parade')->name('parade');
 
 Route::get('/stamp', function() {
 	return view('stamp');

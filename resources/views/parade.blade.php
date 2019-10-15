@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="jds">
-				<div class="jd d-flex justify-content-center align-items-stretch">
+				<div class="jd d-flex justify-content-center align-items-stretch" id="ga">
 					<div class="left-title">
 						관악부<br>제대
 					</div>
@@ -60,8 +60,27 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row jd-row-first d-flex justify-content-between">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
 					</div>
 				</div>
+				<script>
+					let ga = JSON.parse('{!! $ga !!}');
+					let $ga = $('#ga').children('content');
+					console.log(ga,$ga);
+					ga.forEach(function (item) {
+						$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
+						$tgt.attr('data-name',item.cn+item.name);
+					})
+				</script>
 				<div class="jd d-flex justify-content-center align-items-stretch">
 					<div class="left-title">
 						총학생회<br>제대
@@ -79,81 +98,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="jd d-flex justify-content-center align-items-stretch">
-					<div class="left-title">
-						관악부 제대
-					</div>
-					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-					</div>
-				</div>
-				<div class="jd d-flex justify-content-center align-items-stretch">
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd1">
 					<div class="left-title">
 						1제대
 					</div>
@@ -223,10 +168,438 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd2">
+					<div class="left-title">
+						2제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
 							<div class="cell"></div>
 						</div>
 					</div>
 				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd3">
+					<div class="left-title">
+						3제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd4">
+					<div class="left-title">
+						4제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd5">
+					<div class="left-title">
+						5제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd6">
+					<div class="left-title">
+						6제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd7">
+					<div class="left-title">
+						7제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<div class="jd d-flex justify-content-center align-items-stretch" id="jd8">
+					<div class="left-title">
+						8제대
+					</div>
+					<div class="content">
+						<div class="jd-row jd-row-first d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+					</div>
+				</div>
+				<script>
+					let jds = JSON.parse('{!! $ga !!}');
+					console.log(jds);
+					jds.forEach(function (jd,jdIdx) {
+						let $jd = $('#jd'+(jdIdx+1));
+						console.log($jd);
+						jd.forEach(function (cell,cellIdx) {
+							$tgt = $jd.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
+							$tgt.attr('data-name',item.cn+item.name);
+						})
+					})
+				</script>
 			</div>
 		</div>
 	</section>
