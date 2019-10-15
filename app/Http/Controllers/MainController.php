@@ -12,8 +12,6 @@ class MainController extends Controller
     {
 		$arr = $req->input('arr');
 
-
-
 		foreach ($arr as $row) {
 			foreach ($row as $stu) {
 				if (!($stu['cn'] === '' || $stu['cn'] === null)) {
@@ -27,9 +25,10 @@ class MainController extends Controller
 						'type' => $stu['type'],
 					]);
 				}
-
 			}
 		}
+
+		echo true;
 
 		return true;
     }

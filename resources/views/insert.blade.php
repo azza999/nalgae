@@ -77,14 +77,6 @@
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="0"></td>
 								</tr>
 								<tr>
-									<td>2오</td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="4"></td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="3"></td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="2"></td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="1"></td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="0"></td>
-								</tr>
-								<tr>
 									<td>3오</td>
 									<td><input class="form-control cell-input" type="text" data-row="3" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="3" data-col="3"></td>
@@ -214,7 +206,7 @@
 			    url:'/get_jd/'+val,
 
 			    success:function(data){
-			    	
+
 			    	console.log(data);
 
 				}
