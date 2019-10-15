@@ -585,7 +585,7 @@
 @section('js')
 <script>
 	let ga = JSON.parse('{!! json_encode($ga) !!}');
-	let $ga = $('#ga').children('content');
+	let $ga = $('#ga').children('.content');
 	console.log(ga,$ga);
 	ga.forEach(function (item) {
 		$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
@@ -596,7 +596,7 @@
 	let jds = JSON.parse('{!! json_encode($jds) !!}');
 	console.log(jds);
 	jds.forEach(function (jd,jdIdx) {
-		let $jd = $('#jd'+(jdIdx+1));
+		let $jd = $('#jd'+(jdIdx+1)).children('.content');
 		console.log($jd);
 		jd.forEach(function (cell,cellIdx) {
 			$tgt = $jd.children('.jd-row').eq(cell.row).children('.cell').eq(cell.col);
