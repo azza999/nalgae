@@ -16,7 +16,7 @@ class MainController extends Controller
 					if ($stu['name'] === '' || $stu['name'] === null) {
 						continue;
 					}
-					DB::table('students')->insert([
+					DB::insert("INSERT INTO students VALUES(DEFAULT,?,?,?,?,?,?,?)",[
 						'jid' => $stu['jid'],
 						'cn' => $stu['cn'],
 						'name' => $stu['name'],
@@ -24,7 +24,7 @@ class MainController extends Controller
 						'row' => $stu['row'],
 						'role' => $stu['role'],
 						'type' => $stu['type'],
-					]);
+					])
 				}
 			}
     }
