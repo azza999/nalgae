@@ -3,6 +3,13 @@
 @section('title','퍼레이드 위치찾기')
 @section('css')
 <link rel="stylesheet" href="/public/css/jquery-toast.css">
+
+<style>
+	@keyframes highlight {
+		0% { background-color: #777; }
+		100% { background-color: #a9a9a9; }
+	}
+</style>
 @endsection
 
 @section('content')
@@ -637,6 +644,8 @@
 			})
 			return;
 		}
+
+		$tgt.css('animation','highlight 1s infiniate pulse')
 
 		scroll({top: $tgt.offset().top - 200,  behavior: 'smooth'})
 	}
