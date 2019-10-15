@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 class MainController extends Controller
@@ -14,6 +15,11 @@ class MainController extends Controller
     public function insert_fixed(Request $req)
     {
     	echo $req->input('student');
+    }
+    public function get_jd(Request $req, $num)
+    {
+    	$arr = DB::select("SELECT * FROM students WHERE jid = ?",[$num]);
+    	print_r($arr);
     }
 
     // 계좌번호 국민 700102-01-111832 이정민

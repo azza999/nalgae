@@ -43,6 +43,8 @@ Route::post('/insert_fixed','MainController@insert_fixed');
 
 Route::post('/insert_infos','MainController@insert_infos');
 
+Route::post('/get_jd/{num}','MainController@get_jd');
+
 Route::get('/', function () {
     return redirect('home');
 });

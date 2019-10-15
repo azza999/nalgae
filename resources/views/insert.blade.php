@@ -31,14 +31,14 @@
 							<option value="8">8</option>
 						</select>
 					</div>
-					<div class="form-group mt-5">
+					<!-- <div class="form-group mt-5">
 						<label for="cap">제대 지휘자</label>
 						<input type="text" class="form-control" id="cap">
 					</div>
 					<div class="form-group mt-1">
 						<label for="flag">제대 기수</label>
 						<input type="text" class="form-control" id="flag">
-					</div>
+					</div> -->
 					<div class="jd table-responsive">
 						<table>
 							<thead>
@@ -202,6 +202,44 @@
         	}
     	});
 
+    	$('#num').on('change',function(e) {
+    		changeJD($('#num').val());
+    	});
+
+    	function changeJD(val) {
+    		$.ajax({
+
+				type:'POST',
+
+			    url:'/get_jd/'+val,
+
+			    data:{
+			    	student: {
+			    		name: info.name,
+			    		cn: info.cn,
+			    		col: null,
+			    		row: null,
+			    		role: role,
+			    		type: 'fixed',
+			    	}
+				},
+
+			    success:function(data){
+			    	console.log({
+			    		name: info.name,
+			    		cn: info.cn,
+			    		col: null,
+			    		row: null,
+			    		role: role,
+			    		type: 'fixed',
+			    	});
+			    	console.log(data);
+
+				}
+
+			});
+    	}
+
 		function makeupData(e) {
 			e.preventDefault();
 
@@ -213,15 +251,6 @@
 
 			$('.cell-input').each(function(i,ele) {
 				let student = getStudentInfo($(ele).val());
-				console.log({
-					jid: jdNum,
-					cn: student.cn,
-					name: student.name,
-					col: $(ele).data('col'),
-					row: $(ele).data('row'),
-					role: null,
-					type: 'normal'
-				})
 				arr[$(ele).data('row')][$(ele).data('col')] = {
 					jid: jdNum,
 					cn: student.cn,
