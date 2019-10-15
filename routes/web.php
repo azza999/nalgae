@@ -33,10 +33,6 @@ Route::get('/QnA', function() {
 	return view('QnA');
 })->name('QnA');
 
-Route::get('/insert', function() {
-	return view('insert');
-})->name('insert');
-
 Route::get('/students','MainController@students');
 
 Route::post('/insert_fixed','MainController@insert_fixed');

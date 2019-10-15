@@ -28,7 +28,7 @@ $(document).ready(function(e){
 
 	}
 	
-	navigator.getUserMedia({ audio: true, video: {facingMode: "environment"}}, function success(stream) {
+	navigator.getUserMedia({ video: {facingMode: "environment"}}, function success(stream) {
 
 		console.log('success', arguments);
 

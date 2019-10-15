@@ -28,8 +28,8 @@
 			</div>
 			<div class="form-group text-center col-10 offset-1 mb-5">
 				<label for="search" class="" style="font-size: 1.5em;">학생 검색</label>
-				<p class="text-center text-dark mb-1">학생 기수+학생 이름으로 검색해 주세요</p>
-				<p class="text-center text-dark mb-1">ex) 49김명준</p>
+				<p class="text-center text-dark mb-1">학생 기수+학생 이름으로 검색해 주세요 (동명 이인의 경우 A, B를 포함해 주세요)</p>
+				<p class="text-center text-dark mb-1">ex) 49이상훈A</p>
 				<div class="input-group">
 					<input type="text" id="search-input" class="form-control">
 					<div class="input-group-append">
@@ -640,7 +640,7 @@
 				text: '일치하는 학생이 없습니다',
 				bgColor: '#f2dede',
 				textColor: '#b94a48',
-				hideAfter: 1000,
+				hideAfter: 3000,
 				loader: false,
 				stack: 1,
 			})
@@ -652,7 +652,7 @@
 				text: '일치하는 학생이 없습니다',
 				bgColor: '#f2dede',
 				textColor: '#b94a48',
-				hideAfter: 1000,
+				hideAfter: 3000,
 				loader: false,
 				stack: 1,
 			})
