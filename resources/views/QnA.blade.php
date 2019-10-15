@@ -70,7 +70,7 @@
 @endsection
 
 @section('js')
-	<script src="/public/js/jquery-ui.js"></script>
+	<script src="/public/js/jquery-ui-1.11.4/jquery-ui.js"></script>
 
 	<script>
 		$('.content').accordion();
