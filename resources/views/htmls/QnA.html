@@ -1,17 +1,59 @@
-@extends('layouts.layout')
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>@yield('title','날개제.kr')</title>
+	
+	
+	<meta charset="UTF-8">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta name="viewport" content="width=device-width">
+	<meta name="title" content="날개제">
+	<meta name="keyword" content="날개제, 공군, 공군 항공과학고등학교">
+	<meta name="description" content="날개제 웹사이트">
 
-@section('css')
+	<script>
+		if (location.protocol === 'http:') {
+			location.protocol = 'https:';
+		}
+	</script>
+	
+	<link rel="stylesheet" href="../../../public/css/app.css">	<!-- bootstrap -->
+	<link rel="stylesheet" href="../../../public/css/styles.css">
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 	<style>
 		.content .question { font-size: 16px; padding: 15px 10px; margin-top: 10px; }
 		.content .question { outline-color: var(--primary); }
 		.content .answer { line-height: 1.7em; letter-spacing: 0.3px; }
 	</style>
-@endsection
 
-@section('content')
+</head>
+<body>
+	<div class="header-padder"></div>
+	<header>
+		<div class="container">
+			<div class="logo d-flex justify-content-between mt-3">
+				<a class="header-btn" href="{{route('home')}}">
+					<img src="../../../public/img/home.svg" alt="1">
+				</a>
+				<a href="{{route('home')}}" class="logo-box">
+					<img src="../../../public/img/logo.png" alt="">
+				</a>
+				<a class="header-btn" href="{{route('reader')}}">
+					<img src="../../../public/img/QRQR.png" alt="qr code reader">
+				</a>
+			</div>
+			<nav class="nav justify-content-around mt-1">
+				<div id="go-calendar" class="nav-item">일정표</div>
+				<a href="/parade" class="nav-item">퍼레이드</a>
+				<a href="/stamp" class="nav-item">스탬프 투어</a>
+				<a href="/exhibit" class="nav-item">전시회</a>
+				<a href="/QnA" class="nav-item">Q&A</a>
+			</nav>
+		</div>
+	</header>
 
-<section id="stamp" class="container pt-5">
+	<section id="stamp" class="container pt-5">
 		<div class="section-title pt-3 mb-3">
 			<h2>자주묻는 질문</h2>
 		</div>
@@ -66,13 +108,41 @@
 
 		</div>
 	</section>
+	
+	<footer>
+		<div class="contact">
+			<div class="container">
+				<div class="mx-5">
+					<p class="mb-3 pt-3 text-center">공군 항공과학고등학교 날개제 위원회</p>
+					<p class="mb-1">주소&nbsp;&nbsp;&nbsp;경남 진주시 금산면 송백로 44-3</p>
+					<p class="m-0 pb-3">전화&nbsp;&nbsp;&nbsp;055-750-2121</p>
+				</div>
+			</div>
+		</div>
+		<div class="copy">
+			<div class="container text-center p-3">
+				<p>azzadh999@gmail.com</p>
+				<p>2019 AFASHS 김도현, All Rights Reserved | 36th AFASHS ASSEMBLE</p>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="../../../public/js/jquery-3.4.1.min.js"></script>
+	<script>
+		$('#go-calendar').on('click',function(e) {
+			if (location.href.match(/home$/) === null) {
+				location.href = "https://xn--h49aq9fm9y.kr/home#calendar";
+			} else {
+				scroll({top: $('#calendar').offset().top - 20,  behavior: 'smooth'})
+			}
+		});
+	</script>
 
-@endsection
-
-@section('js')
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 	<script>
 		$('.content').accordion();
 	</script>
-@endsection
+
+</body>
+</html>

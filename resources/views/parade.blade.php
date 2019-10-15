@@ -43,46 +43,46 @@
 						관악부<br>제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex justify-content-between">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row jd-row-first d-flex justify-content-between justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
@@ -93,11 +93,11 @@
 						총학생회<br>제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell" data-name="49구민석"></div>
 							<div class="cell" data-name="49권건우"></div>
 						</div>
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell" data-name=""></div>
 							<div class="cell" data-name=""></div>
 							<div class="cell" data-name=""></div>
@@ -111,67 +111,67 @@
 						1제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
@@ -184,67 +184,67 @@
 						2제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 						</div>
 					</div>
@@ -254,53 +254,53 @@
 						3제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
@@ -314,60 +314,60 @@
 						4제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
@@ -378,53 +378,53 @@
 						5제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
@@ -438,11 +438,11 @@
 						6제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
@@ -456,67 +456,67 @@
 						7제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
@@ -527,67 +527,67 @@
 						8제대
 					</div>
 					<div class="content">
-						<div class="jd-row jd-row-first d-flex">
+						<div class="jd-row jd-row-first d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex">
+						<div class="jd-row d-flex justify-content-end">
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+							<div class="cell"></div>
+						</div>
+						<div class="jd-row d-flex justify-content-end">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
