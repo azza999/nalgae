@@ -625,6 +625,8 @@
 	})
 </script>
 <script>
+
+	$.toast.options.loader = false;
 	$('#search-btn').on('click',function(e){
 		search();
 	})
@@ -661,7 +663,7 @@
 		$('.active').removeClass('active');
 		$tgt.addClass('active')
 
-		scroll({top: $tgt.offset().top - 200,  behavior: 'smooth'})
+		scroll({top: $tgt.offset().top - 400,  behavior: 'smooth'})
 	}
 </script>
 
