@@ -3,7 +3,7 @@
 @section('title','퍼레이드 위치지정')
 
 @section('content')
-<form id="jd_form" action="/insert_infos" onsubmit="return makeupData(event);" method="post">
+<form id="jd_form" action="/insert_infos" onsubmit="makeupData(event); return false;" method="post">
 	<section class="container insert" id="insert">
 		<div class="card mt-5 mb-5">
 			<div class="card-body">
@@ -12,7 +12,7 @@
 				</div>
 				<p class="text-center text-danger mb-2 mt-3">학생 이름은 "기수/이름" 으로 정확히 입력해 주세요! (ex: 49/김도현 )</p>
 				<p class="text-center text-danger">5열이 아닐시 1열부터 좌측으로 채워주세요 (관악부 4열 설정시 5열을 비우면 됩니다.)</p>
-				<p class="text-center text-danger">지휘자는 1오 </p>
+				<p class="text-center text-danger">지휘자와 기수는 0오에 채워주세요</p>
 				<div class="form-group">
 					@csrf
 					<div class="input-group">
@@ -203,6 +203,8 @@
     	});
 
 		function makeupData(e) {
+			e.preventDefault();
+
 			let $tgt = $('#jd_form');
 
 			let jdNum = $('#num').val();
@@ -243,6 +245,8 @@
 		}
 
 		function submitFixed(e) {
+			e.preventDefault();
+			
 			let $tgt = $('#fixed-form')
 
 			let info = getStudentInfo($('#special-name').val())
