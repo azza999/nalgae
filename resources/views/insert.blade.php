@@ -160,14 +160,17 @@
 		</div>
 	</section>
 </form>
-<form action="/insert_fixed" class="container mb-5" method="post">
+<form action="/insert_fixed" id="fixed-form" class="container mb-5" method="post">
 	<div class="card">
 		<div class="card-body">
+			<div class="section-title">
+				<h2>특수학생 위치지정</h2>
+			</div>
 			<div class="container insert_fixed">
 				@csrf
 				<div class="form-group">
 					<label for="special-name">이름</label>
-					<input type="text" id="special-name" name="name" class="form-control">
+					<input type="name" id="special-name" name="name" class="form-control">
 				</div>
 				<div class="form-group">
 					<label for="special-role">직책</label>
@@ -192,6 +195,13 @@
 
 @section('js')
 	<script>
+	
+		$.ajaxSetup({
+			headers: {
+            	'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        	}
+    	});
+
 		function makeupData(e) {
 			let $tgt = $('#jd_form');
 
@@ -218,12 +228,13 @@
 
 				type:'POST',
 
-			    url:'/ajaxRequest',
+			    url:'/insert_infos',
 
-			    data:{name:name, password:password, email:email},
+			    data:{arr: arr},
 
 			    success:function(data){
 
+			    	console.log(arr);
 			    	console.log(data);
 
 				}
@@ -231,6 +242,47 @@
 			});
 
 			return false;
+		}
+
+		function submitFixed(e) {
+			let $tgt = $('#fixed-form')
+
+			let info = getStudentInfo($('#special-name').val())
+
+			let role = $('#special-role').val()
+
+			$.ajax({
+
+				type:'POST',
+
+			    url:'/insert_fixed',
+
+			    data:{
+			    	student: {
+			    		name: info.name,
+			    		cn: info.cn,
+			    		col: null,
+			    		row: null,
+			    		role: role,
+			    		type: 'fixed',
+			    	}
+				},
+
+			    success:function(data){
+			    	console.log({
+			    		name: info.name,
+			    		cn: info.cn,
+			    		col: null,
+			    		row: null,
+			    		role: role,
+			    		type: 'fixed',
+			    	});
+			    	console.log(data);
+
+				}
+
+			});
+
 		}
 
 		function getStudentInfo(str) {
