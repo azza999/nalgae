@@ -209,7 +209,7 @@
 
 			let jdNum = $('#num').val();
 
-			let arr = [[],[],[],[],[],[],[],[],[],[]];
+			let arr = [[],[],[],[],[],[],[],[],[],[],[]];
 
 			$('.cell-input').each(function(i,ele) {
 				let student = getStudentInfo($(ele).val());
