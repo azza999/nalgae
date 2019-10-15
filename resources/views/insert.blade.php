@@ -290,7 +290,7 @@
 
 		function getStudentInfo(str) {
 
-			if(str.match(/^\d+\/.+$/i) === null) {
+			if(str.match(/^\d+\/.+$/i) === null && !(str.trim() == "")) {
 				alert('올바르지 않은 입력이 있습니다!');
 				return false;
 			}
