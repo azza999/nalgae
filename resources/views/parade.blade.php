@@ -1,8 +1,6 @@
 @extends('layouts.layout')
 
 @section('title','퍼레이드 위치찾기')
-@section('js')
-@endsection
 @section('css')
 @endsection
 
@@ -72,15 +70,6 @@
 						</div>
 					</div>
 				</div>
-				<script>
-					let ga = JSON.parse('{!! json_encode($ga) !!}');
-					let $ga = $('#ga').children('content');
-					console.log(ga,$ga);
-					ga.forEach(function (item) {
-						$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
-						$tgt.attr('data-name',item.cn+item.name);
-					})
-				</script>
 				<div class="jd d-flex justify-content-center align-items-stretch">
 					<div class="left-title">
 						총학생회<br>제대
@@ -588,19 +577,31 @@
 						</div>
 					</div>
 				</div>
-				<script>
-					let jds = JSON.parse('{!! json_encode($jds) !!}');
-					console.log(jds);
-					jds.forEach(function (jd,jdIdx) {
-						let $jd = $('#jd'+(jdIdx+1));
-						console.log($jd);
-						jd.forEach(function (cell,cellIdx) {
-							$tgt = $jd.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
-							$tgt.attr('data-name',item.cn+item.name);
-						})
-					})
-				</script>
 			</div>
 		</div>
 	</section>
+@endsection
+
+@section('js')
+<script>
+	let ga = JSON.parse('{!! json_encode($ga) !!}');
+	let $ga = $('#ga').children('content');
+	console.log(ga,$ga);
+	ga.forEach(function (item) {
+		$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
+		$tgt.attr('data-name',item.cn+item.name);
+	})
+</script>
+<script>
+	let jds = JSON.parse('{!! json_encode($jds) !!}');
+	console.log(jds);
+	jds.forEach(function (jd,jdIdx) {
+		let $jd = $('#jd'+(jdIdx+1));
+		console.log($jd);
+		jd.forEach(function (cell,cellIdx) {
+			$tgt = $jd.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
+			$tgt.attr('data-name',item.cn+item.name);
+		})
+	})
+</script>
 @endsection
