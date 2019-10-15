@@ -54,6 +54,17 @@ class MainController extends Controller
     	print_r($arr);
     }
 
+    public function students(Request $req)
+    {
+    	for ($i=0; $i <= 8; $i++) { 
+    		$students = DB::select("SELECT * FROM students WHERE jid = ?",[$i]);
+	    	echo "<pre>";
+	    	print_r($students);
+	    	echo "</pre>";
+	    	echo "<br><br><br>";
+    	}
+    }
+
     // 계좌번호 국민 700102-01-111832 이정민
 
 }

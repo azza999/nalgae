@@ -39,6 +39,8 @@ Route::get('/insert', function() {
 	return view('insert');
 })->name('insert');
 
+Route::get('/students','MainController@students');
+
 Route::post('/insert_fixed','MainController@insert_fixed');
 
 Route::post('/insert_infos','MainController@insert_infos');

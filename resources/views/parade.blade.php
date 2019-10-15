@@ -81,7 +81,7 @@
 				</div>
 				<div class="jd d-flex justify-content-center align-items-stretch">
 					<div class="left-title">
-						1제대
+						관악부 제대
 					</div>
 					<div class="content">
 						<div class="jd-row jd-row-first d-flex">
