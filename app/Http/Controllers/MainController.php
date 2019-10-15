@@ -11,22 +11,35 @@ class MainController extends Controller
     public function insert_infos(Request $req)
     {
 		$arr = $req->input('arr');
-			foreach ($arr as $row) {
-				foreach ($row as $stu) {
-					if ($stu['name'] === '' || $stu['name'] === null) {
-						continue;
-					}
-					DB::insert("INSERT INTO students VALUES(DEFAULT,?,?,?,?,?,?,?)",[
-						'jid' => $stu['jid'],
-						'cn' => $stu['cn'],
-						'name' => $stu['name'],
-						'col' => $stu['col'],
-						'row' => $stu['row'],
-						'role' => $stu['role'],
-						'type' => $stu['type'],
-					]);
+		foreach ($arr as $row) {
+			foreach ($row as $stu) {
+				if ($stu['name'] === '' || $stu['name'] === null) {
+					continue;
 				}
+				DB::table('students')->insert([
+					'jid' => $stu['jid'],
+					'cn' => $stu['cn'],
+					'name' => $stu['name'],
+					'col' => $stu['col'],
+					'row' => $stu['row'],
+					'role' => $stu['role'],
+					'type' => $stu['type'],
+				]);
 			}
+		}
+		echo true;
+    }
+    public function text(Request $req)
+    {
+    	DB::table('students')->insert([
+			'jid' => '1',
+			'cn' => '2',
+			'name' => 'name',
+			'col' => '1',
+			'row' => '2',
+			'role' => '3',
+			'type' => 'type',
+		]);
     }
     public function insert_fixed(Request $req)
     {
