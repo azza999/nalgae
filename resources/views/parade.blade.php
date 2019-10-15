@@ -27,7 +27,9 @@
 				<h2>퍼레이드 위치찾기</h2>
 			</div>
 			<div class="form-group text-center col-10 offset-1 mb-5">
-					<label for="search">학생 검색</label>
+				<label for="search" class="" style="font-size: 1.5em;">학생 검색</label>
+				<p class="text-center text-dark mb-1">학생 기수+학생 이름으로 검색해 주세요</p>
+				<p class="text-center text-dark mb-1">ex) 49김명준</p>
 				<div class="input-group">
 					<input type="text" id="search-input" class="form-control">
 					<div class="input-group-append">
