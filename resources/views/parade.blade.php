@@ -13,7 +13,8 @@
 
 	@keyframes highlight {
 		0% { background-color: #777; }
-		99.99% { background-color: #777; }
+		49.99% { background-color: #777; }
+		99.99% { background-color: #a9a9a9; }
 		100% { background-color: #a9a9a9; }
 	}
 </style>
@@ -637,6 +638,8 @@
 		let name = $('#search-input').val();
 		if (name.match(/^\d\d[가-힣a-cA-C]+$/) === null) {
 			$.toast('일치하는 학생이 없습니다',{
+				bgColor: '#f2dede',
+				textColor: '#b94a48',
 				hideAfter: 1000,
 				loader: false,
 				stack: 1,
@@ -646,6 +649,8 @@
 		let $tgt = $('.cell[data-name='+name+']');
 		if ($tgt.length === 0) {
 			$.toast('일치하는 학생이 없습니다',{
+				bgColor: '#f2dede',
+				textColor: '#b94a48',
 				hideAfter: 1000,
 				loader: false,
 				stack: 1,
