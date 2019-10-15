@@ -24,7 +24,7 @@ class MainController extends Controller
 						'row' => $stu['row'],
 						'role' => $stu['role'],
 						'type' => $stu['type'],
-					])
+					]);
 				}
 			}
     }
