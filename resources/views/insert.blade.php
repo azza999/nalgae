@@ -3,7 +3,7 @@
 @section('title','퍼레이드 위치지정')
 
 @section('content')
-<form id="jd_form" action="/insert_infos" onsubmit="makeupData(event);" method="post">
+<form id="jd_form" action="/insert_infos" onsubmit="return makeupData(event);" method="post">
 	<section class="container insert" id="insert">
 		<div class="card mt-5 mb-5">
 			<div class="card-body">
@@ -160,7 +160,7 @@
 		</div>
 	</section>
 </form>
-<form action="/insert_fixed" id="fixed-form" class="container mb-5" method="post">
+<form action="/insert_fixed" id="fixed-form" class="container mb-5" method="post" onsubmit="return submitFixed(event)">
 	<div class="card">
 		<div class="card-body">
 			<div class="section-title">
@@ -222,8 +222,6 @@
 				}
 			})
 
-			console.log(arr);
-
 			$.ajax({
 
 				type:'POST',
@@ -283,6 +281,7 @@
 
 			});
 
+			return false;
 		}
 
 		function getStudentInfo(str) {
