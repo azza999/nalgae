@@ -11,6 +11,20 @@ class MainController extends Controller
     public function insert_infos(Request $req)
     {
     	print_r($req->input('arr'));
+    	$arr = $req->input('arr');
+    	foreach ($arr as $row) {
+    		foreach ($row as $stu => $value) {
+	    		DB::table('students')->insert([
+	    			'jid' => $stu->jid,
+	    			'cn' => $stu->cn,
+	    			'name' => $stu->name,
+	    			'col' => $stu->col,
+	    			'row' => $stu->row,
+	    			'role' => $stu->role,
+	    			'type' => $stu->type,
+	    		]);
+    		}
+    	}
     }
     public function insert_fixed(Request $req)
     {
