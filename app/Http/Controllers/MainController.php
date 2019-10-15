@@ -17,7 +17,7 @@ class MainController extends Controller
 		foreach ($arr as $row) {
 			foreach ($row as $stu) {
 				if ($stu['cn'] === '' || $stu['cn'] === null) {
-					return;
+					continue;
 				}
 
 				DB::table('students')->insert([
