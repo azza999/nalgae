@@ -57,96 +57,96 @@
 									<td></td>
 									<td></td>
 									<td></td>
-									<td><input class="form-control cell-input" placeholder="기수" type="text" data-row="1" data-col="2"></td>
-									<td><input class="form-control cell-input" placeholder="지휘자" type="text" data-row="1" data-col="1"></td>
+									<td><input class="form-control cell-input" placeholder="기수" type="text" data-row="0" data-col="1"></td>
+									<td><input class="form-control cell-input" placeholder="지휘자" type="text" data-row="0" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>1오</td>
-									<td><input class="form-control cell-input" type="text" data-row="1" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="1" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="1" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="1" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="1" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="1" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>2오</td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="2" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>2오</td>
-									<td><input class="form-control cell-input" type="text" data-row="2" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="2" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="2" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>3오</td>
-									<td><input class="form-control cell-input" type="text" data-row="3" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="3" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="3" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="3" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="3" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="3" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>4오</td>
-									<td><input class="form-control cell-input" type="text" data-row="4" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="4" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="4" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="4" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="4" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="4" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>5오</td>
-									<td><input class="form-control cell-input" type="text" data-row="5" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="5" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="5" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="5" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="5" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="5" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>6오</td>
-									<td><input class="form-control cell-input" type="text" data-row="6" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="6" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="6" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="6" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="6" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="6" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>7오</td>
-									<td><input class="form-control cell-input" type="text" data-row="7" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="7" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="7" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="7" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="7" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="7" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>8오</td>
-									<td><input class="form-control cell-input" type="text" data-row="8" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="8" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="8" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="8" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="8" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="8" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>9오</td>
-									<td><input class="form-control cell-input" type="text" data-row="9" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="9" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="9" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="9" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="9" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="9" data-col="0"></td>
 								</tr>
 								<tr>
 									<td>10오</td>
-									<td><input class="form-control cell-input" type="text" data-row="10" data-col="5"></td>
 									<td><input class="form-control cell-input" type="text" data-row="10" data-col="4"></td>
 									<td><input class="form-control cell-input" type="text" data-row="10" data-col="3"></td>
 									<td><input class="form-control cell-input" type="text" data-row="10" data-col="2"></td>
 									<td><input class="form-control cell-input" type="text" data-row="10" data-col="1"></td>
+									<td><input class="form-control cell-input" type="text" data-row="10" data-col="0"></td>
 								</tr>
 							</tbody>
 						</table>
