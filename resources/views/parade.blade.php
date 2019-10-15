@@ -626,7 +626,6 @@
 </script>
 <script>
 
-	$.toast.options.loader = false;
 	$('#search-btn').on('click',function(e){
 		search();
 	})
@@ -639,7 +638,8 @@
 	function search() {
 		let name = $('#search-input').val();
 		if (name.match(/^\d\d[가-힣a-cA-C]+$/) === null) {
-			$.toast('일치하는 학생이 없습니다',{
+			$.toast({
+				text: '일치하는 학생이 없습니다',
 				bgColor: '#f2dede',
 				textColor: '#b94a48',
 				hideAfter: 1000,
@@ -650,7 +650,8 @@
 		}
 		let $tgt = $('.cell[data-name='+name+']');
 		if ($tgt.length === 0) {
-			$.toast('일치하는 학생이 없습니다',{
+			$.toast({
+				text: '일치하는 학생이 없습니다',
 				bgColor: '#f2dede',
 				textColor: '#b94a48',
 				hideAfter: 1000,
