@@ -12,8 +12,8 @@
 	}
 
 	@keyframes highlight {
-		0% { background-color: #777; }
-		49.99% { background-color: #777; }
+		0% { background-color: #494949; }
+		49.99% { background-color: #494949; }
 		99.99% { background-color: #a9a9a9; }
 		100% { background-color: #a9a9a9; }
 	}
@@ -604,7 +604,6 @@
 <script>
 	let ga = JSON.parse('{!! json_encode($ga) !!}');
 	let $ga = $('#ga').children('.content');
-	console.log(ga,$ga);
 	ga.forEach(function (item) {
 		$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
 		$tgt.attr('data-name',item.cn+item.name);
@@ -613,10 +612,8 @@
 </script>
 <script>
 	let jds = JSON.parse('{!! json_encode($jds) !!}');
-	console.log(jds);
 	jds.forEach(function (jd,jdIdx) {
 		let $jd = $('#jd'+(jdIdx+1)).children('.content');
-		console.log($jd);
 		jd.forEach(function (cell,cellIdx) {
 			$tgt = $jd.children('.jd-row').eq(cell.row).children('.cell').eq(cell.col);
 			$tgt.attr('data-name',cell.cn+cell.name);
@@ -630,7 +627,6 @@
 		search();
 	})
 	$('#search-input').on('keydown',function(e){
-		console.log(e.keyCode);
 		if(e.keyCode === 13) {
 			search();
 		}
