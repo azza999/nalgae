@@ -11,8 +11,6 @@ class MainController extends Controller
     public function insert_infos(Request $req)
     {
 		$arr = $req->input('arr');
-		echo $arr[0][0]['jid'];
-		DB::query("DELETE FROM students WHERE jid = ?",[$arr[0][0]['jid']]);
 
 		foreach ($arr as $row) {
 			foreach ($row as $stu) {
@@ -31,8 +29,6 @@ class MainController extends Controller
 				]);
 			}
 		}
-
-		echo true;
 
 		return true;
     }
