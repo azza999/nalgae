@@ -5,8 +5,15 @@
 <link rel="stylesheet" href="/public/css/jquery-toast.css">
 
 <style>
+	.cell.active {
+		-webkit-animation: highlight .5s infinite;
+		-o-animation: highlight .5s infinite;
+		animation: highlight .5s infinite;
+	}
+
 	@keyframes highlight {
 		0% { background-color: #777; }
+		99.99% { background-color: #777; }
 		100% { background-color: #a9a9a9; }
 	}
 </style>
@@ -29,7 +36,7 @@
 			</div>
 			<div class="jds">
 				<div class="jd d-flex justify-content-center align-items-stretch" id="ga">
-					<div class="left-title">
+					<div class="left-title" style="height: 400px;">
 						관악부<br>제대
 					</div>
 					<div class="content">
@@ -79,19 +86,20 @@
 					</div>
 				</div>
 				<div class="jd d-flex justify-content-center align-items-stretch">
-					<div class="left-title">
+					<div class="left-title" style="height: 100px;">
 						총학생회<br>제대
 					</div>
 					<div class="content">
 						<div class="jd-row jd-row-first d-flex">
-							<div class="cell"></div>
+							<div class="cell" data-name="49구민석"></div>
+							<div class="cell" data-name="49권건우"></div>
 						</div>
 						<div class="jd-row jd-row-first d-flex">
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
-							<div class="cell"></div>
+							<div class="cell" data-name=""></div>
+							<div class="cell" data-name=""></div>
+							<div class="cell" data-name=""></div>
+							<div class="cell" data-name=""></div>
+							<div class="cell" data-name=""></div>
 						</div>
 					</div>
 				</div>
@@ -645,7 +653,8 @@
 			return;
 		}
 
-		$tgt.css('animation','highlight pulse 1s infinite');
+		$('.active').removeClass('active');
+		$tgt.addClass('active')
 
 		scroll({top: $tgt.offset().top - 200,  behavior: 'smooth'})
 	}
