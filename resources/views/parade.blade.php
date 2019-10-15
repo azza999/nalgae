@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<script>
-					let ga = JSON.parse('{!! $ga !!}');
+					let ga = JSON.parse('{!! json_encode($ga) !!}');
 					let $ga = $('#ga').children('content');
 					console.log(ga,$ga);
 					ga.forEach(function (item) {
@@ -589,7 +589,7 @@
 					</div>
 				</div>
 				<script>
-					let jds = JSON.parse('{!! $ga !!}');
+					let jds = JSON.parse('{!! json_encode($jds) !!}');
 					console.log(jds);
 					jds.forEach(function (jd,jdIdx) {
 						let $jd = $('#jd'+(jdIdx+1));
