@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('css')
-	<link rel="stylesheet" href="/public/js/jquery-ui-1.11.4/jquery-ui.css">
+	<link rel="stylesheet" href="/public/css/jquery-ui.css">
 	<style>
 		.content .question { font-size: 16px; padding: 15px 10px; margin-top: 10px; }
 		.content .question { outline-color: var(--primary); }
@@ -70,7 +70,7 @@
 @endsection
 
 @section('js')
-	<script src="/public/js/jquery-ui-1.11.4/jquery-ui.js"></script>
+	<script src="/public/js/jquery-ui.js"></script>
 
 	<script>
 		$('.content').accordion();
