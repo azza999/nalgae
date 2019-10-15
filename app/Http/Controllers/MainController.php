@@ -10,9 +10,9 @@ class MainController extends Controller
 {
     public function insert_infos(Request $req)
     {
-    	print_r($req->input('arr'));
     	$arr = $req->input('arr');
     	foreach ($arr as $row) {
+    		echo "asd";
     		foreach ($row as $stu => $value) {
 	    		DB::table('students')->insert([
 	    			'jid' => $stu->jid,
