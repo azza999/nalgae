@@ -599,8 +599,8 @@
 		let $jd = $('#jd'+(jdIdx+1));
 		console.log($jd);
 		jd.forEach(function (cell,cellIdx) {
-			$tgt = $jd.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
-			$tgt.attr('data-name',item.cn+item.name);
+			$tgt = $jd.children('.jd-row').eq(cell.row).children('.cell').eq(cell.col);
+			$tgt.attr('data-name',cell.cn+cell.name);
 		})
 	})
 </script>
