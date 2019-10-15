@@ -620,10 +620,16 @@
 	})
 	function search() {
 		let name = $('#search-input').val();
-
+		if (name.match(/^\d\d[가-힣a-cA-C]+$/) === null) {
+			$.toast('일치하는 학생이 없습니다',{
+				hideAfter: 1000,
+				loader: false,
+				stack: 1,
+			})
+			return;
+		}
 		let $tgt = $('.cell[data-name='+name+']');
-
-		if (name.match(/^\d\d[가-힣a-cA-C]+$/) === null || $tgt.length === 0) {
+		if ($tgt.length === 0) {
 			$.toast('일치하는 학생이 없습니다',{
 				hideAfter: 1000,
 				loader: false,
