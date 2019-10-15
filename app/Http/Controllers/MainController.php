@@ -13,7 +13,18 @@ class MainController extends Controller
 		$arr = $req->input('arr');
 			foreach ($arr as $row) {
 				foreach ($row as $stu) {
-					print_r($stu);
+					if ($stu['name'] === '' || $stu['name'] === null) {
+						continue;
+					}
+					DB::table('students')->insert([
+						'jid' => $stu['jid'],
+						'cn' => $stu['cn'],
+						'name' => $stu['name'],
+						'col' => $stu['col'],
+						'row' => $stu['row'],
+						'role' => $stu['role'],
+						'type' => $stu['type'],
+					]);
 				}
 			}
     }
