@@ -10,7 +10,7 @@
 		var name = '{{ $name }}';
 		var text = '{{ $text }}';
 		var a = document.createElement('a')
-		a.href = 'supertoss://bank='+name+'&acoountNo='+account+'&origin=linkgen&msg='+text;
+		a.href = 'supertoss://bank='+name+'&accountNo='+account+'&origin=linkgen&msg='+text;
 		document.body.append(a);
 		a.click();
 	</script>
