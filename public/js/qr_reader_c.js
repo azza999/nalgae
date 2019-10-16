@@ -87,7 +87,7 @@ $(document).ready(function(e){
 				if (code.data.match('xn--h49aq9fm9y.kr') !== null) {
 
 					// 자동이동은 한번만
-					if (flag = true) {
+					if (flag === true) {
 						// 자동이동
 						var a = document.createElement('a');
 
