@@ -1,19 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>날개제 QR코드 페이지 이동</title>
-</head>
-<body>
+@extends('layouts.layout')
+
+@section('title','날개제.kr - 송금하기')
+
+@section('content')
+	
+	<div class="container mt-5">
+		<div class="text-center mt-5">
+			<a href="#" id="btn" class="btn btn-primary">송금하기</a>
+		</div>
+	</div>
+
 	<script>
 		var account = '{{ $account }}';
 		var name = '{{ $name }}';
 		var text = '{{ $text }}';
-		var a = document.createElement('a')
+		var btn = document.getElementById('btn')
 		a.href = 'supertoss://send?bank='+name+'&accountNo='+account+'&origin=linkgen&msg='+text;
-		a.innerHTML = 'supertoss://send?bank='+name+'&accountNo='+account+'&origin=linkgen&msg='+text;
 		document.body.append(a);
 		a.click();
 	</script>
-</body>
-</html>
+@endsection
