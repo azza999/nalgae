@@ -75,10 +75,6 @@ $(document).ready(function(e){
 
 			if(code) {
 		
-					alert(code.data);
-					$('#link').attr('href',code.data);
-					$('#link').css('display','block')
-					console.log($('#link'),code.data);
 				// 인식한 QR코드의 영역을 감싸는 사용자에게 보여지는 테두리 생성
 				drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF0000");
 
@@ -88,21 +84,24 @@ $(document).ready(function(e){
 
 				drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF0000");
 
-				// if (code.data.match('xn--h49aq9fm9y.kr') !== null) {
+				if (code.data.match('xn--h49aq9fm9y.kr') !== null) {
 
 					// 자동이동은 한번만
-					// if (flag = true) {
-					// 	// 자동이동
-					// 	var a = document.createElement('a');
+					if (flag = true) {
+						// 자동이동
+						var a = document.createElement('a');
 
-					// 	a.href = code.data;
-					// 	a.click();
-					// 	flag = false
-					// }
+						a.href = code.data;
+						a.click();
+						flag = false
+					}
 
 					// 자동이동 실패시
+					$('#link').attr('href',code.data);
+					$('#link').css('display','block')
+					console.log($('#link'),code.data);
 
-				// }
+				}
 
 			}
 		}
@@ -112,5 +111,3 @@ $(document).ready(function(e){
 		}, 10);
 	}
 });
-
-alert('teㄴt');

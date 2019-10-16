@@ -21,7 +21,7 @@
 			<video id="video" muted hidden></video>
 		</div>
 		<p id="loadingMessage" class="text-center">QR코드를 비춰주세요!</p>
-		<a id="link" class="btn btn-primary" style="" href="">송금하기<br><small>(자동이동 실패시 눌러주세요)</small></a>
+		<a id="link" class="btn btn-primary" style="display: none;" href="">송금하기<br><small>(자동이동 실패시 눌러주세요)</small></a>
 	</div>
 @endsection
 
