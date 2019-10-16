@@ -41,8 +41,8 @@ Route::post('/insert_infos','MainController@insert_infos');
 
 Route::post('/get_jd/{num}','MainController@get_jd');
 
-Route::get('/code/{code}',function($code) {
-	return view('code',compact('code'));
+Route::get('/code/{account}/{name}/{text}',function($account,$name,$text) {
+	return view('code',compact('account','name','text'));
 });
 
 Route::get('/', function () {
