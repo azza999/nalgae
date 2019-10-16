@@ -41,6 +41,10 @@ Route::post('/insert_infos','MainController@insert_infos');
 
 Route::post('/get_jd/{num}','MainController@get_jd');
 
+Route::get('/code/{code}',function($code) {
+	return view('code',compact('code'));
+});
+
 Route::get('/', function () {
     return redirect('home');
 });
