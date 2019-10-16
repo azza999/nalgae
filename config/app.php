@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://날개제.kr'),
 
     'asset_url' => env('ASSET_URL', null),
 
