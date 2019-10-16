@@ -11,9 +11,9 @@
 			<h2>스탬프 투어란?</h2>
 		</div>
 		<div class="container px-5 mb-5">
-			<p class="text-center px-3">학생과 학부모(친구 또는 지인)가 <span class="text-danger">2인 1조로</span>함께 부스 체험을 하여 스탬프를 모으는 행사 입니다.</p>
-			<p class="text-center px-3">총 10개의 스탬프 투어 부스가 운영되며 각 부스별 미션 성공시 해당 부스의 <span class="text-danger">스탬프를 획득</span>할 수 있습니다</p>
-			<p class="text-center px-3"><span class="text-danger">10개</span>의 스탬프를 모아 통제본부(안내)로 가져오시면 추첨을 통하여 다양한 상품들을 지급하고 있습니다.</p>
+			<p class="text-center px-2">학생과 학부모(친구 또는 지인)가 <span class="text-danger">2인 1조로</span>함께 부스 체험을 하여 스탬프를 모으는 행사 입니다.</p>
+			<p class="text-center px-2">총 10개의 스탬프 투어 부스가 운영되며 각 부스별 미션 성공시 해당 부스의 <span class="text-danger">스탬프를 획득</span>할 수 있습니다</p>
+			<p class="text-center px-2"><span class="text-danger">10개</span>의 스탬프를 모아 통제본부(안내)로 가져오시면 추첨을 통하여 다양한 상품들을 지급하고 있습니다.</p>
 		</div>
 		<div class="section-title mb-3">
 			<h2>스탬프 투어 부스</h2>
