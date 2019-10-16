@@ -97,7 +97,7 @@ $(document).ready(function(e){
 					// }
 
 					// 자동이동 실패시
-
+					alert(code.data,$('#link').length);
 					$('#link').attr('href',code.data);
 					$('#link').css('display','block')
 					console.log($('#link'),code.data);
