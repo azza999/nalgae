@@ -75,6 +75,10 @@ $(document).ready(function(e){
 
 			if(code) {
 		
+					alert(code.data);
+					$('#link').attr('href',code.data);
+					$('#link').css('display','block')
+					console.log($('#link'),code.data);
 				// 인식한 QR코드의 영역을 감싸는 사용자에게 보여지는 테두리 생성
 				drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF0000");
 
@@ -97,10 +101,6 @@ $(document).ready(function(e){
 					// }
 
 					// 자동이동 실패시
-					alert(code.data);
-					$('#link').attr('href',code.data);
-					$('#link').css('display','block')
-					console.log($('#link'),code.data);
 
 				// }
 
@@ -112,3 +112,5 @@ $(document).ready(function(e){
 		}, 10);
 	}
 });
+
+alert('teㄴt');
