@@ -12,7 +12,7 @@
 	<div class="section-title">
 		<h2>항과고 약도</h2>
 	</div>
-	<img src="/public/img/map.jpg" alt="">
+	<img src="/public/img/map.png" alt="">
 </div>
 <div class="calendar container" id="calendar">
 	<div class="section-title">
