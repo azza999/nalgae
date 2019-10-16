@@ -607,7 +607,7 @@
 	let ga = JSON.parse('{!! json_encode($ga) !!}');
 	let $ga = $('#ga').children('.content');
 	ga.forEach(function (item) {
-		$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col flex-direction-row-reverse);
+		$tgt = $ga.children('.jd-row').eq(item.row).children('.cell').eq(item.col);
 		$tgt.attr('data-name',item.cn+item.name);
 		$tgt.text(item.name)
 	})
@@ -617,7 +617,7 @@
 	jds.forEach(function (jd,jdIdx) {
 		let $jd = $('#jd'+(jdIdx+1)).children('.content');
 		jd.forEach(function (cell,cellIdx) {
-			$tgt = $jd.children('.jd-row').eq(cell.row).children('.cell').eq(cell.col flex-direction-row-reverse);
+			$tgt = $jd.children('.jd-row').eq(cell.row).children('.cell').eq(cell.col);
 			$tgt.attr('data-name',cell.cn+cell.name);
 			$tgt.text(cell.name)
 		})
