@@ -84,7 +84,7 @@ $(document).ready(function(e){
 
 				drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF0000");
 
-				if (code.data.match(/^https:\/\/$/) !== null) {
+				if (code.data.match(/^xn--h49aq9fm9y.kr:\/$/) !== null) {
 
 					// 자동이동은 한번만
 					if (flag = true) {
