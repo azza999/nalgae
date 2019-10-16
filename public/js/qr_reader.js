@@ -55,8 +55,6 @@ $(document).ready(function(e){
 
 	function tick() {
 
-		flag = true;
-
 		if(video.readyState === video.HAVE_ENOUGH_DATA) {
 
 			// 읽어들이는 비디오 화면의 크기
@@ -102,15 +100,11 @@ $(document).ready(function(e){
 
 					$('#link').attr('href',code.data);
 					$('#link').css('display','block')
+					console.log($('#link'),code.data);
 
 				}
 
-			} else {
-
-				console.log('none');
-
 			}
-
 		}
 
 		setTimeout(function() {
