@@ -89,12 +89,12 @@
 					</div>
 				</div>
 				<div class="jd d-flex justify-content-center align-items-stretch">
-					<div class="left-title" style="height: 100px;">
+					<div class="left-title" style="height: 50px;">
 						제대<br>기수
 					</div>
 					<div class="content">
 						<div class="jd-row jd-row-first d-flex justify-content-center flex-row-reverse">
-							<div class="cell" data-name="49권건우">49권건우</div>
+							<div class="cell" data-name="49권건우">권건우</div>
 						</div>
 					</div>
 				</div>
@@ -448,7 +448,7 @@
 					</div>
 					<div class="content">
 						<div class="jd-row jd-row-first d-flex">
-							<div class="cell" data-name49홍정민">49홍정민</div>
+							<div class="cell" data-name="49홍정민">홍정민</div>
 							<div class="cell" data-name="49정인배">정인배</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
