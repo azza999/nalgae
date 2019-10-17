@@ -83,8 +83,8 @@
 							<div class="cell"></div>
 						</div>
 						<div class="jd-row jd-row-first d-flex justify-content-between flex-row-reverse">
-							<div class="cell"></div>
-							<div class="cell"></div>
+							<div class="cell" style="margin-right: 30px;"></div>
+							<div class="cell" style="margin-left: 30px;"></div>
 						</div>
 					</div>
 				</div>
@@ -309,7 +309,7 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex justify-content-end flex-row-reverse">
+						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
