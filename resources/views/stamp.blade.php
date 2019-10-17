@@ -34,7 +34,7 @@
 						<img src="/public/img/stamp/c13.jpg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">축구부</h5>
-							<p class="card-text">두명이 연속으로 골을 넣었을 경우 스템프 획득! 한명이라도 실패하면 다시 처음부터 도전!</p>
+							<p class="card-text">두명이 연속으로 골을 넣었을 경우 스템프 획득! (한명이라도 실패하면 다시 처음부터 도전)</p>
 						</div>
 					</div>
 				</div>
@@ -43,7 +43,7 @@
 						<img src="/public/img/stamp/c10.jpg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">탁구부</h5>
-							<p class="card-text">탁구부</p>
+							<p class="card-text">탁구부 학생과 번갈아가며 승부를 하고, 11점 내기를 하는동안 각각 2점씩 내면 스템프 획득! </p>
 						</div>
 					</div>
 				</div>
@@ -52,7 +52,7 @@
 						<img src="/public/img/stamp/c17.jpeg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">풋살부</h5>
-							<p class="card-text">풋살부</p>
+							<p class="card-text">1점푸터 10점까지 있는 과녁판에 교대로 3번 공을 차서 15점 이상 점수를 내면 스템프 획득!</p>
 						</div>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 						<img src="/public/img/stamp/c4.jpg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">모형항공기부</h5>
-							<p class="card-text">모형항공기부</p>
+							<p class="card-text">조종복을 입고 함께 사진을 찍어 보여주면 스템프 획득!</p>
 						</div>
 					</div>
 				</div>
@@ -79,7 +79,7 @@
 						<img src="/public/img/stamp/c7.jpg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">족구부</h5>
-							<p class="card-text">족구부</p>
+							<p class="card-text">각각 트래핑을 실시하고, 두명의 트래핑 개수가 합쳐 10개 이상시 스템프 획득!</p>
 						</div>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 						<img src="/public/img/stamp/c18.jpg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">배구부</h5>
-							<p class="card-text">배구부</p>
+							<p class="card-text">한명은 토스로 바구니에 공을 넣고, 한명은 스파이크로 바구니에 공을 넣으면 스템프 획득!</p>
 						</div>
 					</div>
 				</div>
