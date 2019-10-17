@@ -180,7 +180,7 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex justify-content-end flex-row-reverse">
+						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
@@ -253,7 +253,7 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex justify-content-end flex-row-reverse">
+						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell"></div>
 						</div>
 					</div>
@@ -376,7 +376,7 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex justify-content-end flex-row-reverse">
+						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
@@ -500,7 +500,7 @@
 							<div class="cell" data-name="50진시완">진시완</div>
 							<div class="cell" data-name="51김무준">김무준</div>
 						</div>
-						<div class="jd-row d-flex justify-content-end flex-row-reverse">
+						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell" data-name="49안은이">안은이</div>
 							<div class="cell" data-name="50이묘진">이묘진</div>
 							<div class="cell" data-name="50한지수">한지수</div>
@@ -572,7 +572,7 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
-						<div class="jd-row d-flex justify-content-end flex-row-reverse">
+						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell"></div>
 							<div class="cell"></div>
 						</div>
