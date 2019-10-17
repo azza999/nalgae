@@ -84,24 +84,21 @@ $(document).ready(function(e){
 
 				drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF0000");
 
-				if (code.data.match('xn--h49aq9fm9y.kr') !== null) {
 
-					// 자동이동은 한번만
-					if (flag === true) {
-						// 자동이동
-						var a = document.createElement('a');
-
-						a.href = code.data;
-						a.click();
-						flag = false
-					}
-
-					// 자동이동 실패시
-					$('#link').attr('href',code.data);
-					$('#link').css('display','block')
-					console.log($('#link'),code.data);
-
+				// 자동이동은 한번만
+				if (flag === true) {
+					// 자동이동
+					var a = document.createElement('a');
+					a.href = code.data;
+					a.click();
+					flag = false
 				}
+				
+				// 자동이동 실패시
+				$('#link').attr('href',code.data);
+				$('#link').css('display','block')
+				console.log($('#link'),code.data);
+
 
 			}
 		}
