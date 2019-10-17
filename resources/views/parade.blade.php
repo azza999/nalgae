@@ -574,6 +574,7 @@
 						<div class="jd-row d-flex justify-content-start flex-row-reverse">
 							<div class="cell"></div>
 							<div class="cell"></div>
+							<div class="cell"></div>
 						</div>
 					</div>
 				</div>
