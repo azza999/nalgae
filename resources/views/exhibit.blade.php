@@ -16,7 +16,7 @@
 						<img src="/public/img/stamp/c21.jpg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">POP부</h5>
-							<p class="card-text"></p>
+							<p class="card-text">학생들의 pop 작품을 전시합니다. 페이스페인팅등 다양한 참여 행사도 함께 진행하고 있습니다</p>
 						</div>
 					</div>
 				</div>
