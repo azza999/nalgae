@@ -314,7 +314,6 @@
 							<div class="cell"></div>
 							<div class="cell"></div>
 							<div class="cell"></div>
-							<div class="cell"></div>
 						</div>
 					</div>
 				</div>
