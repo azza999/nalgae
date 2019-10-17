@@ -104,14 +104,14 @@
 					</div>
 					<div class="content">
 						<div class="jd-row jd-row-first d-flex justify-content-cneter flex-row-reverse">
-							<div class="cell" data-name="49구민석">49구민석</div>
+							<div class="cell" data-name="49구민석">구민석</div>
 						</div>
 						<div class="jd-row jd-row-first d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="49조옥제">49조옥제</div>
-							<div class="cell" data-name="49나휘민">49나휘민</div>
-							<div class="cell" data-name="49이채민">49이채민</div>
-							<div class="cell" data-name="49조빛찬">49조빛찬</div>
-							<div class="cell" data-name="49김승환">49김승환</div>
+							<div class="cell" data-name="49조옥제">조옥제</div>
+							<div class="cell" data-name="49나휘민">나휘민</div>
+							<div class="cell" data-name="49이채민">이채민</div>
+							<div class="cell" data-name="49조빛찬">조빛찬</div>
+							<div class="cell" data-name="49김승환">김승환</div>
 						</div>
 					</div>
 				</div>
@@ -448,62 +448,62 @@
 					</div>
 					<div class="content">
 						<div class="jd-row jd-row-first d-flex">
-							<div class="cell" data-name="49홍정민">49홍정민</div>
-							<div class="cell" data-name="49정인배">49정인배</div>
+							<div class="cell" data-name49홍정민">49홍정민</div>
+							<div class="cell" data-name="49정인배">정인배</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="49김남규">49김남규</div>
-							<div class="cell" data-name="49김동욱">49김동욱</div>
-							<div class="cell" data-name="49이준영">49이준영</div>
-							<div class="cell" data-name="51김건우">51김건우</div>
-							<div class="cell" data-name="51김교윤">51김교윤</div>
+							<div class="cell" data-name="49김남규">김남규</div>
+							<div class="cell" data-name="49김동욱">김동욱</div>
+							<div class="cell" data-name="49이준영">이준영</div>
+							<div class="cell" data-name="51김건우">김건우</div>
+							<div class="cell" data-name="51김교윤">김교윤</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="51박민준">51박민준</div>
-							<div class="cell" data-name="51김민규">51김민규</div>
-							<div class="cell" data-name="50은동현">50은동현</div>
-							<div class="cell" data-name="51김태환">51김태환</div>
-							<div class="cell" data-name="50이호연">50이호연</div>
+							<div class="cell" data-name="51박민준">박민준</div>
+							<div class="cell" data-name="51김민규">김민규</div>
+							<div class="cell" data-name="50은동현">은동현</div>
+							<div class="cell" data-name="51김태환">김태환</div>
+							<div class="cell" data-name="50이호연">이호연</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="50김재훈">50김재훈</div>
-							<div class="cell" data-name="50박희수">50박희수</div>
-							<div class="cell" data-name="51이승헌">51이승헌</div>
-							<div class="cell" data-name="50박재형">50박재형</div>
-							<div class="cell" data-name="50이재혁">50이재혁</div>
+							<div class="cell" data-name="50김재훈">김재훈</div>
+							<div class="cell" data-name="50박희수">박희수</div>
+							<div class="cell" data-name="51이승헌">이승헌</div>
+							<div class="cell" data-name="50박재형">박재형</div>
+							<div class="cell" data-name="50이재혁">이재혁</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="51정현우">51정현우</div>
-							<div class="cell" data-name="51이성우">51이성우</div>
-							<div class="cell" data-name="51박세찬">51박세찬</div>
-							<div class="cell" data-name="50김동진">50김동진</div>
-							<div class="cell" data-name="50이상민">50이상민</div>
+							<div class="cell" data-name="51정현우">정현우</div>
+							<div class="cell" data-name="51이성우">이성우</div>
+							<div class="cell" data-name="51박세찬">박세찬</div>
+							<div class="cell" data-name="50김동진">김동진</div>
+							<div class="cell" data-name="50이상민">이상민</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="50김민재">50김민재</div>
-							<div class="cell" data-name="51이승찬">51이승찬</div>
-							<div class="cell" data-name="51이진우">51이진우</div>
-							<div class="cell" data-name="51김현수">51김현수</div>
-							<div class="cell" data-name="51박주현">51박주현</div>
+							<div class="cell" data-name="50김민재">김민재</div>
+							<div class="cell" data-name="51이승찬">이승찬</div>
+							<div class="cell" data-name="51이진우">이진우</div>
+							<div class="cell" data-name="51김현수">김현수</div>
+							<div class="cell" data-name="51박주현">박주현</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="50박찬운">50박찬운</div>
-							<div class="cell" data-name="51김은우">51김은우</div>
-							<div class="cell" data-name="49안승현">49안승현</div>
-							<div class="cell" data-name="49김성준">49김성준</div>
-							<div class="cell" data-name="49이주승">49이주승</div>
+							<div class="cell" data-name="50박찬운">박찬운</div>
+							<div class="cell" data-name="51김은우">김은우</div>
+							<div class="cell" data-name="49안승현">안승현</div>
+							<div class="cell" data-name="49김성준">김성준</div>
+							<div class="cell" data-name="49이주승">이주승</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="50김필립">50김필립</div>
-							<div class="cell" data-name="50김유안">50김유안</div>
-							<div class="cell" data-name="50강현우">50강현우</div>
-							<div class="cell" data-name="50진시완">50진시완</div>
-							<div class="cell" data-name="51김무준">51김무준</div>
+							<div class="cell" data-name="50김필립">김필립</div>
+							<div class="cell" data-name="50김유안">김유안</div>
+							<div class="cell" data-name="50강현우">강현우</div>
+							<div class="cell" data-name="50진시완">진시완</div>
+							<div class="cell" data-name="51김무준">김무준</div>
 						</div>
 						<div class="jd-row d-flex justify-content-end flex-row-reverse">
-							<div class="cell" data-name="49안은이">49안은이</div>
-							<div class="cell" data-name="50이묘진">50이묘진</div>
-							<div class="cell" data-name="50한지수">50한지수</div>
+							<div class="cell" data-name="49안은이">안은이</div>
+							<div class="cell" data-name="50이묘진">이묘진</div>
+							<div class="cell" data-name="50한지수">한지수</div>
 						</div>
 					</div>
 				</div>
