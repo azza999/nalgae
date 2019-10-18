@@ -52,7 +52,7 @@
 						<img src="/public/img/stamp/c17.jpeg" alt="" class="card-img-top">
 						<div class="card-body">
 							<h5 class="card-title">풋살부</h5>
-							<p class="card-text">1점푸터 10점까지 있는 과녁판에 교대로 3번 공을 차서 15점 이상 점수를 내면 스템프 획득!</p>
+							<p class="card-text">과녁판에 교대로 3번 공을 차서 15점 이상 점수를 내면 스템프 획득!</p>
 						</div>
 					</div>
 				</div>
